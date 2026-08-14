@@ -141,6 +141,37 @@ include_once __DIR__ . '/includes/header.php';
           <p>Mantenimiento preventivo de matrices comunes, shaft de ventilación, redes de montantes y asesoría integral a comités de administración para evitar multas de la SEC.</p>
         </div>
       </div>
+
+      <!-- Verified SEC Installer & QR Showcase Card -->
+      <div class="sec-installer-showcase">
+        <div class="installer-avatar-wrap">
+          <img src="assets/images/domingo-isain-caamano-gasfiter-sec.jpg" alt="Domingo Isaín Caamaño - Instalador Autorizado SEC" class="installer-avatar-img" width="140" height="140">
+          <span class="installer-sec-badge">AUTORIZADO SEC</span>
+        </div>
+
+        <div class="installer-info-content">
+          <h3>Domingo Isaín Caamaño</h3>
+          <div class="installer-title-sub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            Instalador Autorizado de Gas SEC • Clase 1, 2 y 3
+          </div>
+          <p class="installer-desc">
+            Instalador registrado oficialmente ante la Superintendencia de Electricidad y Combustibles para regularizaciones, inspecciones de Sello Verde, levantamiento de sellos rojos y declaraciones técnicas TC6 en toda la Región Metropolitana.
+          </p>
+          <div class="installer-features-pills">
+            <span class="installer-pill">✓ Credencial Oficial SEC</span>
+            <span class="installer-pill">✓ Declaraciones TC6</span>
+            <span class="installer-pill">✓ Sello Verde Certificado</span>
+            <span class="installer-pill">✓ +40 Años de Experiencia</span>
+          </div>
+        </div>
+
+        <div class="qr-verification-box">
+          <img src="assets/images/qr-sec.png" alt="Código QR Verificación Oficial SEC" class="qr-verification-img" width="130" height="130">
+          <div class="qr-verification-label">Escanea con tu Celular</div>
+          <div class="qr-verification-sub">Valida registro oficial en la SEC</div>
+        </div>
+      </div>
     </div>
   </section>
 

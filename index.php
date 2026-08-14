@@ -625,6 +625,37 @@ include_once __DIR__ . '/includes/header.php';
           <p>Todos nuestros trabajos incluyen boleta o factura electrónica y certificado de garantía formal por escrito. Si surge algún imprevisto, respondemos de inmediato sin costo adicional.</p>
         </div>
       </div>
+
+      <!-- Verified SEC Installer & QR Showcase Card -->
+      <div class="sec-installer-showcase">
+        <div class="installer-avatar-wrap">
+          <img src="assets/images/domingo-isain-caamano-gasfiter-sec.jpg" alt="Domingo Isaín Caamaño - Instalador Certificado SEC" class="installer-avatar-img" width="140" height="140">
+          <span class="installer-sec-badge">AUTORIZADO SEC</span>
+        </div>
+
+        <div class="installer-info-content">
+          <h3>Domingo Isaín Caamaño</h3>
+          <div class="installer-title-sub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            Instalador de Gas Clase 1, 2 y 3 • Registro Oficial SEC
+          </div>
+          <p class="installer-desc">
+            Especialista a cargo de inspecciones técnicas normadas, pruebas de hermeticidad, declaraciones TC6 y proyectos de gasfitería con más de 40 años de trayectoria comprobable en Santiago.
+          </p>
+          <div class="installer-features-pills">
+            <span class="installer-pill">✓ Credencial SEC Vigente</span>
+            <span class="installer-pill">✓ Firma de Planos y TC6</span>
+            <span class="installer-pill">✓ Sello Verde Normativo</span>
+            <span class="installer-pill">✓ Atención Directa RM</span>
+          </div>
+        </div>
+
+        <div class="qr-verification-box">
+          <img src="assets/images/qr-sec.png" alt="Código QR Verificación Oficial SEC" class="qr-verification-img" width="130" height="130">
+          <div class="qr-verification-label">Escanea con tu Celular</div>
+          <div class="qr-verification-sub">Valida registro oficial en la SEC</div>
+        </div>
+      </div>
     </div>
   </section>
 
