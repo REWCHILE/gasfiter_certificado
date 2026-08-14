@@ -5,10 +5,10 @@
         <!-- Col 1: Brand & SEC credentials -->
         <div class="footer-brand">
           <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
-            <img src="assets/images/logo.jpg" alt="Central Gásfiter Certificado" width="48" height="48" style="border-radius: 50%;">
+            <img src="assets/images/logo.webp" alt="Central Gásfiter Certificado" width="48" height="48" style="border-radius: 50%;">
             <span style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; color: #ffffff;">Gásfiter Certificado</span>
           </div>
-          <p>Más de 40 años prestando servicios en distintas especialidades de la gasfitería. Detección electrónica de fugas de gas, prueba de hermeticidad manométrica, gas trazador, detección de fugas de agua, sellado Prodoral sin romper muros y certificación Sello Verde SEC en toda la Región Metropolitana.</p>
+          <p>Más de 40 años prestando servicios en distintas especialidades de la gasfitería. Detección electrónica de fugas de gas, prueba de hermeticidad manométrica, gas trazador, detección de fugas de agua, sellado Prodoral R6-1 sin romper muros y certificación Sello Verde SEC en toda la Región Metropolitana.</p>
           <div style="display: flex; align-items: center; gap: 0.5rem; color: #34d399; font-weight: 700; font-size: 0.85rem;">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
             Instaladores Autorizados Clase 1, 2 y 3 SEC
@@ -19,12 +19,12 @@
         <div class="footer-col">
           <h4>Servicios SEC</h4>
           <ul class="footer-links">
-            <li><a href="fuga-de-gas.php">Detección de Fugas de Gas 24/7</a></li>
-            <li><a href="prodoral.php">Sellado con Prodoral (Sin Picar)</a></li>
-            <li><a href="gasfiter-sec.php">Certificación Sello Verde SEC</a></li>
-            <li><a href="calefont.php">Reparación y Mantención de Calefont</a></li>
-            <li><a href="destape-alcantarillado.php">Destape de Cañerías y Alcantarillado</a></li>
-            <li><a href="servicios.php">Catálogo Completo de Servicios</a></li>
+            <li><a href="fuga-de-gas">Detección de Fugas de Gas 24/7</a></li>
+            <li><a href="prodoral">Sellado con Prodoral R6-1 (Sin Picar)</a></li>
+            <li><a href="gasfiter-sec">Certificación Sello Verde SEC</a></li>
+            <li><a href="calefont">Reparación y Mantención de Calefont</a></li>
+            <li><a href="destape-alcantarillado">Destape de Cañerías y Alcantarillado</a></li>
+            <li><a href="servicios">Catálogo Completo de Servicios</a></li>
           </ul>
         </div>
 
@@ -32,14 +32,14 @@
         <div class="footer-col">
           <h4>Cobertura Santiago</h4>
           <ul class="footer-links">
-            <li><a href="cobertura.php">Gásfiter Las Condes</a></li>
-            <li><a href="cobertura.php">Gásfiter Providencia</a></li>
-            <li><a href="cobertura.php">Gásfiter Vitacura</a></li>
-            <li><a href="cobertura.php">Gásfiter Ñuñoa</a></li>
-            <li><a href="cobertura.php">Gásfiter Santiago Centro</a></li>
-            <li><a href="cobertura.php">Gásfiter Lo Barnechea</a></li>
-            <li><a href="cobertura.php">Gásfiter La Reina y Peñalolén</a></li>
-            <li><a href="cobertura.php">Ver todas las 32 comunas &raquo;</a></li>
+            <li><a href="cobertura">Gásfiter Las Condes</a></li>
+            <li><a href="cobertura">Gásfiter Providencia</a></li>
+            <li><a href="cobertura">Gásfiter Vitacura</a></li>
+            <li><a href="cobertura">Gásfiter Ñuñoa</a></li>
+            <li><a href="cobertura">Gásfiter Santiago Centro</a></li>
+            <li><a href="cobertura">Gásfiter Lo Barnechea</a></li>
+            <li><a href="cobertura">Gásfiter La Reina y Peñalolén</a></li>
+            <li><a href="cobertura">Ver todas las 32 comunas &raquo;</a></li>
           </ul>
         </div>
 
@@ -77,9 +77,9 @@
           © <?php echo date('Y'); ?> <strong>Gásfiter Certificado</strong> (gasfiter-certificado.cl). Todos los derechos reservados.
         </div>
         <div style="display: flex; gap: 1.5rem;">
-          <a href="cotizar.php" style="color: #94a3b8;">Cotizador Express</a>
-          <a href="cobertura.php" style="color: #94a3b8;">Mapa Cobertura</a>
-          <a href="contacto.php" style="color: #94a3b8;">Contacto SEC</a>
+          <a href="cotizar" style="color: #cbd5e1;">Cotizador Express</a>
+          <a href="cobertura" style="color: #cbd5e1;">Mapa Cobertura</a>
+          <a href="contacto" style="color: #cbd5e1;">Contacto SEC</a>
         </div>
       </div>
     </div>
@@ -88,8 +88,8 @@
   <?php include_once __DIR__ . '/floating-buttons.php'; ?>
   <?php include_once __DIR__ . '/toast-activity.php'; ?>
 
-  <!-- Scripts -->
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/calculator.js"></script>
+  <!-- Scripts (Deferred for Performance) -->
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/calculator.js" defer></script>
 </body>
 </html>

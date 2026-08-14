@@ -1,14 +1,16 @@
 <?php
-$page_title = "Sellado de Fugas de Gas sin Picar | Tecnología Prodoral R200 Chile";
-$page_description = "Reparamos fugas de gas subterráneas y embutidas sin romper baldosas, cerámicas ni muros gracias a la inyección de Prodoral R200. Garantía 5 años. Llama al 9 3223 7072.";
-$page_type = "prodoral";
+$page_title = "📞 9 3223 7072 | Sellado de Fugas con Prodoral R6-1 sin Picar";
+$page_description = "Reparamos fugas de gas subterráneas y embutidas sin romper baldosas, cerámicas ni muros gracias a la inyección de Prodoral R6-1. Garantía 5 años. Llama al 9 3223 7072.";
+$page_type = "website";
+$canonical_url = "https://gasfiter-certificado.cl/prodoral";
+$og_image = "https://gasfiter-certificado.cl/assets/images/prodoral.webp";
 
 include_once __DIR__ . '/includes/header.php';
 ?>
 
 <main>
   <!-- Hero Section Prodoral -->
-  <section class="hero-section hero-prodoral" aria-label="Hero Prodoral R200">
+  <section class="hero-section hero-prodoral" aria-label="Hero Prodoral R6-1">
     <div class="container hero-grid">
       <div class="hero-content">
         <div class="hero-badge-live" style="background: rgba(16, 185, 129, 0.2); border-color: rgba(16, 185, 129, 0.4); color: #6ee7b7;">
@@ -17,7 +19,7 @@ include_once __DIR__ . '/includes/header.php';
         </div>
 
         <h1 class="hero-title">
-          Sellado de Cañerías con <span class="highlight-gold">Prodoral R200</span> Sin Romper Muros ni Pisos
+          Sellado de Cañerías con <span class="highlight-gold">Prodoral R6-1</span> Sin Romper Muros ni Pisos
         </h1>
 
         <p class="hero-lead">
@@ -44,7 +46,7 @@ include_once __DIR__ . '/includes/header.php';
         </div>
 
         <div class="hero-ctas">
-          <a href="https://wa.me/56932237072?text=Hola,%20quiero%20cotizar%20el%20sellado%20de%20cañerías%20con%20Prodoral%20R200." target="_blank" class="btn btn-whatsapp btn-lg">
+          <a href="https://wa.me/56932237072?text=Hola,%20quiero%20cotizar%20el%20sellado%20de%20cañerías%20con%20Prodoral%20R6-1." target="_blank" class="btn btn-whatsapp btn-lg">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.046.419-.098.824z"/></svg>
             Cotizar Prodoral por WhatsApp
           </a>
@@ -57,13 +59,13 @@ include_once __DIR__ . '/includes/header.php';
       <div class="hero-card-form">
         <div class="hero-card-header">
           <span class="hero-card-tag" style="background: #dcfce7; color: #15803d;">Cotización Prodoral</span>
-          <h3 class="hero-card-title">Evalúa Tu Caso Sin Compromiso</h3>
+          <h2 class="hero-card-title">Evalúa Tu Caso Sin Compromiso</h2>
           <p class="hero-card-subtitle">Te enviamos presupuesto formal en minutos</p>
         </div>
 
         <form class="ajax-contact-form" method="POST">
           <input type="text" name="website_hp" style="display:none;" tabindex="-1" autocomplete="off">
-          <input type="hidden" name="servicio" value="Sellado Prodoral R200">
+          <input type="hidden" name="servicio" value="Sellado Prodoral R6-1">
 
           <div class="form-group">
             <label class="form-label">Nombre Completo *</label>
@@ -117,7 +119,7 @@ include_once __DIR__ . '/includes/header.php';
     <div class="container">
       <div class="section-header">
         <span class="section-subtitle">Comparativa Definitiva</span>
-        <h2 class="section-title">¿Por Qué Elegir Prodoral R200 Frente al Método Tradicional?</h2>
+        <h2 class="section-title">¿Por Qué Elegir Prodoral R6-1 Frente al Método Tradicional?</h2>
         <p class="section-desc">Analizamos las ventajas directas en costo, tiempo y estética para tu hogar.</p>
       </div>
 
@@ -126,7 +128,7 @@ include_once __DIR__ . '/includes/header.php';
           <thead>
             <tr style="background: var(--primary-navy); color: #ffffff; font-family: var(--font-heading); text-align: left;">
               <th style="padding: 1.25rem 1.5rem; font-size: 1rem;">Característica</th>
-              <th style="padding: 1.25rem 1.5rem; font-size: 1rem; background: var(--sec-green-dark); color: #ffffff;">✨ Sellado Prodoral R200</th>
+              <th style="padding: 1.25rem 1.5rem; font-size: 1rem; background: var(--sec-green-dark); color: #ffffff;">✨ Sellado Prodoral R6-1</th>
               <th style="padding: 1.25rem 1.5rem; font-size: 1rem; background: #334155;">🔨 Picado Tradicional de Muros</th>
             </tr>
           </thead>
@@ -167,7 +169,7 @@ include_once __DIR__ . '/includes/header.php';
     <div class="container">
       <div class="section-header">
         <span class="section-subtitle">Procedimiento Técnico</span>
-        <h2 class="section-title">El Paso a Paso del Procedimiento Prodoral</h2>
+        <h2 class="section-title">El Paso a Paso del Procedimiento Prodoral R6-1</h2>
         <p class="section-desc">Metodología limpia, controlada y supervisada por ingenieros y técnicos autorizados SEC.</p>
       </div>
 
@@ -181,7 +183,7 @@ include_once __DIR__ . '/includes/header.php';
         <div class="trust-sec-card">
           <div class="trust-sec-icon">2</div>
           <h3>Inyección del Polímero</h3>
-          <p>Se bombea el polímero líquido Prodoral R200 a presión constante hasta inundar completamente la matriz, penetrando en cada microfisura y unión roscada.</p>
+          <p>Se bombea el polímero líquido Prodoral R6-1 a presión constante hasta inundar completamente la matriz, penetrando en cada microfisura y unión roscada.</p>
         </div>
 
         <div class="trust-sec-card">

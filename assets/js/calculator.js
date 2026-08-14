@@ -29,7 +29,7 @@ function initCalculator() {
       desc: 'Prueba de Hermeticidad Normativa + Detector Electrónico / Gas Trazador + Reparación Certificada SEC' 
     },
     'prodoral': { 
-      name: 'Sellado de Cañerías con Prodoral R200 (Sin Picar)', 
+      name: 'Sellado de Cañerías con Prodoral R6-1 (Sin Picar)', 
       desc: 'Sellado Polimérico Alemán sin Romper Muros ni Pisos + Prueba de Hermeticidad (Garantía 5 años)' 
     },
     'calefont': { 

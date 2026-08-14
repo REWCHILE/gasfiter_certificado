@@ -13,53 +13,53 @@
   <div class="mobile-drawer-body">
     <ul class="mobile-nav-links">
       <li>
-        <a href="index.php" class="mobile-nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'index.php') ? 'active' : ''; ?>">
+        <a href="./" class="mobile-nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'index.php') ? 'active' : ''; ?>">
           <span>🏠 Inicio</span>
         </a>
       </li>
       <li>
-        <a href="fuga-de-gas.php" class="mobile-nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'fuga-de-gas.php') ? 'active' : ''; ?>">
+        <a href="fuga-de-gas" class="mobile-nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'fuga-de-gas.php') ? 'active' : ''; ?>">
           <span>🔥 Fugas de Gas 24/7</span>
           <span class="nav-badge-pill">Urgente</span>
         </a>
       </li>
       <li>
-        <a href="prodoral.php" class="mobile-nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'prodoral.php') ? 'active' : ''; ?>">
-          <span>🧪 Sellado Prodoral (Sin Picar)</span>
+        <a href="prodoral" class="mobile-nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'prodoral.php') ? 'active' : ''; ?>">
+          <span>🧪 Sellado Prodoral R6-1 (Sin Picar)</span>
         </a>
       </li>
       <li>
-        <a href="gasfiter-sec.php" class="mobile-nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'gasfiter-sec.php') ? 'active' : ''; ?>">
+        <a href="gasfiter-sec" class="mobile-nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'gasfiter-sec.php') ? 'active' : ''; ?>">
           <span>🛡️ Sello Verde SEC / Certificación</span>
         </a>
       </li>
       <li>
-        <a href="calefont.php" class="mobile-nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'calefont.php') ? 'active' : ''; ?>">
+        <a href="calefont" class="mobile-nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'calefont.php') ? 'active' : ''; ?>">
           <span>⚡ Calefont y Calderas</span>
         </a>
       </li>
       <li>
-        <a href="destape-alcantarillado.php" class="mobile-nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'destape-alcantarillado.php') ? 'active' : ''; ?>">
+        <a href="destape-alcantarillado" class="mobile-nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'destape-alcantarillado.php') ? 'active' : ''; ?>">
           <span>🚰 Destape de Cañerías</span>
         </a>
       </li>
       <li>
-        <a href="servicios.php" class="mobile-nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'servicios.php') ? 'active' : ''; ?>">
+        <a href="servicios" class="mobile-nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'servicios.php') ? 'active' : ''; ?>">
           <span>📋 Todos los Servicios</span>
         </a>
       </li>
       <li>
-        <a href="cobertura.php" class="mobile-nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'cobertura.php') ? 'active' : ''; ?>">
+        <a href="cobertura" class="mobile-nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'cobertura.php') ? 'active' : ''; ?>">
           <span>📍 Cobertura Comunas RM</span>
         </a>
       </li>
       <li>
-        <a href="cotizar.php" class="mobile-nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'cotizar.php') ? 'active' : ''; ?>">
+        <a href="cotizar" class="mobile-nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'cotizar.php') ? 'active' : ''; ?>">
           <span>🧮 Cotizador Online</span>
         </a>
       </li>
       <li>
-        <a href="contacto.php" class="mobile-nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'contacto.php') ? 'active' : ''; ?>">
+        <a href="contacto" class="mobile-nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'contacto.php') ? 'active' : ''; ?>">
           <span>📞 Contacto Directo</span>
         </a>
       </li>

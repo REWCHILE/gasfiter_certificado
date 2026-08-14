@@ -1,7 +1,9 @@
 <?php
-$page_title = "Detección y Reparación de Fugas de Gas 24/7 en Santiago | SEC";
+$page_title = "📞 9 3223 7072 | Detección Fugas de Gas 24/7 en Santiago SEC";
 $page_description = "Servicio de urgencia 24 horas para detección y reparación de fugas de gas en Santiago. Detector electrónico, gas trazador, prueba de hermeticidad y reposición inmediata. Llama al 9 3223 7072.";
-$page_type = "fuga";
+$page_type = "website";
+$canonical_url = "https://gasfiter-certificado.cl/fuga-de-gas";
+$og_image = "https://gasfiter-certificado.cl/assets/images/fuga-gas.webp";
 
 include_once __DIR__ . '/includes/header.php';
 ?>
@@ -27,7 +29,7 @@ include_once __DIR__ . '/includes/header.php';
         <div class="hero-trust-bullets">
           <div class="hero-trust-item">
             <span class="hero-trust-icon">⚡</span>
-            <span>Llegada Express en 30 a 45 min</span>
+            <span>Respuesta Express en 30 a 45 min</span>
           </div>
           <div class="hero-trust-item">
             <span class="hero-trust-icon">🔍</span>
@@ -57,7 +59,7 @@ include_once __DIR__ . '/includes/header.php';
       <div class="hero-card-form">
         <div class="hero-card-header">
           <span class="hero-card-tag" style="background: #fee2e2; color: #dc2626;">Alerta Fuga de Gas</span>
-          <h3 class="hero-card-title">Atención Prioritaria Inmediata</h3>
+          <h2 class="hero-card-title">Atención Prioritaria Inmediata</h2>
           <p class="hero-card-subtitle">Tu seguridad es nuestra prioridad</p>
         </div>
 
@@ -132,7 +134,7 @@ include_once __DIR__ . '/includes/header.php';
         <div class="trust-sec-card">
           <div class="trust-sec-icon" style="background: linear-gradient(135deg, #10b981 0%, #047857 100%);">3</div>
           <h3>Reparación y Certificación SEC</h3>
-          <p>Ejecutamos la reparación reglamentaria (soldadura de plata al 45% o sellado polimérico Prodoral R200) y emitimos el informe técnico oficial para la reposición del suministro.</p>
+          <p>Ejecutamos la reparación reglamentaria (soldadura de plata al 45% o sellado polimérico Prodoral R6-1) y emitimos el informe técnico oficial para la reposición del suministro.</p>
         </div>
       </div>
     </div>
@@ -143,9 +145,9 @@ include_once __DIR__ . '/includes/header.php';
     <div class="container">
       <div style="max-width: 860px; margin: 0 auto; text-align: center;">
         <span style="font-size: 2.5rem; display: block; margin-bottom: 1rem;">⚠️</span>
-        <h3 style="font-family: var(--font-heading); font-size: 1.8rem; font-weight: 800; color: #9f1239; margin-bottom: 1rem;">
+        <h2 style="font-family: var(--font-heading); font-size: 1.8rem; font-weight: 800; color: #9f1239; margin-bottom: 1rem;">
           Medidas de Seguridad Inmediatas si Sientes Olor a Gas
-        </h3>
+        </h2>
         <ul style="text-align: left; display: inline-block; list-style: none; margin-bottom: 1.5rem; line-height: 1.8; font-size: 1rem; color: #881337;">
           <li>❌ <strong>NO</strong> enciendas luces, fósforos, velas ni artefactos eléctricos.</li>
           <li>❌ <strong>NO</strong> uses el timbre ni conectes cargadores de teléfono cerca.</li>

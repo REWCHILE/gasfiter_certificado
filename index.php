@@ -1,7 +1,9 @@
 <?php
-$page_title = "Gásfiter Certificado SEC en Santiago | Detección Fugas de Gas 24/7";
-$page_description = "Más de 40 años prestando servicios de gasfitería SEC en Santiago. Detección electrónica de fugas de gas, prueba de hermeticidad, detección de fugas de agua, sellado Prodoral y calefont. Llama 24/7 al 9 3223 7072.";
-$page_type = "home";
+$page_title = "📞 9 3223 7072 | Gásfiter Certificado SEC en Santiago 24/7";
+$page_description = "Más de 40 años prestando servicios de gasfitería SEC en Santiago. Detección electrónica de fugas de gas, prueba de hermeticidad, detección de fugas de agua, sellado Prodoral R6-1 y calefont. Llama 24/7 al 9 3223 7072.";
+$page_type = "website";
+$canonical_url = "https://gasfiter-certificado.cl/";
+$og_image = "https://gasfiter-certificado.cl/assets/images/og-share-gasfiter.jpg";
 
 include_once __DIR__ . '/includes/header.php';
 ?>
@@ -22,7 +24,7 @@ include_once __DIR__ . '/includes/header.php';
         </h1>
 
         <p class="hero-lead">
-          <strong>Más de 40 años prestando servicios en distintas especialidades de la gasfitería</strong>. Detección electrónica de fugas de gas, pruebas de hermeticidad, certificación Sello Verde, sellado <strong>Prodoral R200 (sin picar)</strong> y reparación de calefont.
+          <strong>Más de 40 años prestando servicios en distintas especialidades de la gasfitería</strong>. Detección electrónica de fugas de gas, pruebas de hermeticidad, certificación Sello Verde, sellado <strong>Prodoral R6-1 (sin picar)</strong> y reparación de calefont.
         </p>
 
         <div class="hero-trust-bullets">
@@ -32,7 +34,7 @@ include_once __DIR__ . '/includes/header.php';
           </div>
           <div class="hero-trust-item">
             <span class="hero-trust-icon">✓</span>
-            <span>Llegada en 30 a 45 minutos</span>
+            <span>Respuesta en 30 a 45 minutos</span>
           </div>
           <div class="hero-trust-item">
             <span class="hero-trust-icon">✓</span>
@@ -117,7 +119,7 @@ include_once __DIR__ . '/includes/header.php';
               <label class="form-label" for="servicio-hero">Servicio Requerido *</label>
               <select id="servicio-hero" name="servicio" class="form-control" required>
                 <option value="Fuga de Gas Urgente" selected>🔥 Fuga de Gas / Olor a Gas (Urgente)</option>
-                <option value="Sellado Prodoral R200">🧪 Sellado Prodoral (Sin Romper)</option>
+                <option value="Sellado Prodoral R6-1">🧪 Sellado Prodoral R6-1 (Sin Romper)</option>
                 <option value="Certificación Sello Verde">🛡️ Sello Verde SEC / Regularización TC6</option>
                 <option value="Reparación de Calefont">⚡ Mantención / Reparación Calefont</option>
                 <option value="Destape de Cañería">🚰 Destape Cañería / Alcantarillado</option>
@@ -145,7 +147,7 @@ include_once __DIR__ . '/includes/header.php';
         <div class="stat-item">
           <div class="stat-icon-wrap">🛡️</div>
           <div class="stat-content">
-            <h3>+40 Años</h3>
+            <div style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800; color: #ffffff;">+40 Años</div>
             <p>De Trayectoria en Especialidades de Gasfitería</p>
           </div>
         </div>
@@ -153,15 +155,15 @@ include_once __DIR__ . '/includes/header.php';
         <div class="stat-item">
           <div class="stat-icon-wrap">⏱️</div>
           <div class="stat-content">
-            <h3>45 Min</h3>
-            <p>Tiempo Promedio de Llegada RM</p>
+            <div style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800; color: #ffffff;">45 Min</div>
+            <p>Tiempo Promedio de Respuesta RM</p>
           </div>
         </div>
 
         <div class="stat-item">
           <div class="stat-icon-wrap">⭐</div>
           <div class="stat-content">
-            <h3>+40.000</h3>
+            <div style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800; color: #ffffff;">+40.000</div>
             <p>Servicios Realizados con Éxito</p>
           </div>
         </div>
@@ -169,7 +171,7 @@ include_once __DIR__ . '/includes/header.php';
         <div class="stat-item">
           <div class="stat-icon-wrap">📝</div>
           <div class="stat-content">
-            <h3>100% SEC</h3>
+            <div style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800; color: #ffffff;">100% SEC</div>
             <p>Garantía por Escrito y Boleta</p>
           </div>
         </div>
@@ -190,7 +192,7 @@ include_once __DIR__ . '/includes/header.php';
         <!-- Service 1: Fuga de Gas -->
         <article class="service-card">
           <div class="service-img-wrap">
-            <img src="assets/images/fuga-gas.png" alt="Detección Electrónica de Fugas de Gas" loading="lazy" width="380" height="210">
+            <img src="assets/images/fuga-gas.webp" alt="Detección Electrónica de Fugas de Gas" loading="lazy" width="380" height="210">
             <span class="service-tag urgent">🚨 Emergencia 24/7</span>
           </div>
           <div class="service-body">
@@ -211,7 +213,7 @@ include_once __DIR__ . '/includes/header.php';
               </li>
             </ul>
             <div class="service-footer">
-              <a href="fuga-de-gas.php" class="service-link">Ver detalles &raquo;</a>
+              <a href="fuga-de-gas" class="service-link">Ver detalles &raquo;</a>
               <a href="tel:932237072" class="btn btn-danger btn-sm">Llamar 24/7</a>
             </div>
           </div>
@@ -220,11 +222,11 @@ include_once __DIR__ . '/includes/header.php';
         <!-- Service 2: Prodoral Sealing -->
         <article class="service-card">
           <div class="service-img-wrap">
-            <img src="assets/images/prodoral.png" alt="Sellado de Fugas con Prodoral R200 sin picar" loading="lazy" width="380" height="210">
+            <img src="assets/images/prodoral.webp" alt="Sellado de Fugas con Prodoral R6-1 sin picar" loading="lazy" width="380" height="210">
             <span class="service-tag">🧪 Innovación Exclusiva</span>
           </div>
           <div class="service-body">
-            <h3 class="service-title">Sellado de Cañerías con Prodoral R200</h3>
+            <h3 class="service-title">Sellado de Cañerías con Prodoral R6-1</h3>
             <p class="service-text">Repara fugas de gas subterráneas o embutidas <strong>sin romper cerámicas, baldosas ni muros</strong>. Polímero alemán sellador de alta durabilidad.</p>
             <ul class="service-bullets">
               <li>
@@ -241,8 +243,8 @@ include_once __DIR__ . '/includes/header.php';
               </li>
             </ul>
             <div class="service-footer">
-              <a href="prodoral.php" class="service-link">Ver cómo funciona &raquo;</a>
-              <a href="cotizar.php" class="btn btn-primary btn-sm">Cotizar Prodoral</a>
+              <a href="prodoral" class="service-link">Ver cómo funciona &raquo;</a>
+              <a href="cotizar" class="btn btn-primary btn-sm">Cotizar Prodoral</a>
             </div>
           </div>
         </article>
@@ -250,7 +252,7 @@ include_once __DIR__ . '/includes/header.php';
         <!-- Service 3: Sello Verde SEC -->
         <article class="service-card">
           <div class="service-img-wrap">
-            <img src="assets/images/hero-gasfiter.png" alt="Certificación Sello Verde SEC e Inspecciones" loading="lazy" width="380" height="210">
+            <img src="assets/images/hero-sec.webp" alt="Certificación Sello Verde SEC e Inspecciones" loading="lazy" width="380" height="210">
             <span class="service-tag green">🛡️ Trámite Oficial SEC</span>
           </div>
           <div class="service-body">
@@ -271,8 +273,8 @@ include_once __DIR__ . '/includes/header.php';
               </li>
             </ul>
             <div class="service-footer">
-              <a href="gasfiter-sec.php" class="service-link">Ver certificación &raquo;</a>
-              <a href="cotizar.php" class="btn btn-primary btn-sm">Solicitar SEC</a>
+              <a href="gasfiter-sec" class="service-link">Ver certificación &raquo;</a>
+              <a href="cotizar" class="btn btn-primary btn-sm">Solicitar SEC</a>
             </div>
           </div>
         </article>
@@ -280,7 +282,7 @@ include_once __DIR__ . '/includes/header.php';
         <!-- Service 4: Calefont -->
         <article class="service-card">
           <div class="service-img-wrap">
-            <img src="assets/images/calefont.png" alt="Mantención y Reparación de Calefont Multimarca" loading="lazy" width="380" height="210">
+            <img src="assets/images/calefont.webp" alt="Mantención y Reparación de Calefont Multimarca" loading="lazy" width="380" height="210">
             <span class="service-tag">⚡ Todas las Marcas</span>
           </div>
           <div class="service-body">
@@ -301,7 +303,7 @@ include_once __DIR__ . '/includes/header.php';
               </li>
             </ul>
             <div class="service-footer">
-              <a href="calefont.php" class="service-link">Ver servicio calefont &raquo;</a>
+              <a href="calefont" class="service-link">Ver servicio calefont &raquo;</a>
               <a href="tel:932237072" class="btn btn-danger btn-sm">Pedir Técnico</a>
             </div>
           </div>
@@ -310,7 +312,7 @@ include_once __DIR__ . '/includes/header.php';
         <!-- Service 5: Destapes -->
         <article class="service-card">
           <div class="service-img-wrap">
-            <img src="assets/images/fuga-gas.png" alt="Destape de Cañerías y Alcantarillado" loading="lazy" width="380" height="210">
+            <img src="assets/images/hero-destapes.webp" alt="Destape de Cañerías y Alcantarillado" loading="lazy" width="380" height="210">
             <span class="service-tag urgent">⚡ Máquinas Eléctricas</span>
           </div>
           <div class="service-body">
@@ -331,7 +333,7 @@ include_once __DIR__ . '/includes/header.php';
               </li>
             </ul>
             <div class="service-footer">
-              <a href="destape-alcantarillado.php" class="service-link">Ver destapes &raquo;</a>
+              <a href="destape-alcantarillado" class="service-link">Ver destapes &raquo;</a>
               <a href="tel:932237072" class="btn btn-danger btn-sm">Llamar Ahora</a>
             </div>
           </div>
@@ -340,7 +342,7 @@ include_once __DIR__ . '/includes/header.php';
         <!-- Service 6: Fugas de Agua & Gasfitería General -->
         <article class="service-card">
           <div class="service-img-wrap">
-            <img src="assets/images/hero-gasfiter.png" alt="Detección de Fugas de Agua y Plomería a Domicilio" loading="lazy" width="380" height="210">
+            <img src="assets/images/hero-gasfiter.webp" alt="Detección de Fugas de Agua y Plomería a Domicilio" loading="lazy" width="380" height="210">
             <span class="service-tag">💧 Fugas de Agua & Plomería</span>
           </div>
           <div class="service-body">
@@ -361,8 +363,8 @@ include_once __DIR__ . '/includes/header.php';
               </li>
             </ul>
             <div class="service-footer">
-              <a href="servicios.php" class="service-link">Ver catálogo &raquo;</a>
-              <a href="cotizar.php" class="btn btn-primary btn-sm">Cotizar Online</a>
+              <a href="servicios" class="service-link">Ver catálogo &raquo;</a>
+              <a href="cotizar" class="btn btn-primary btn-sm">Cotizar Online</a>
             </div>
           </div>
         </article>
@@ -370,18 +372,18 @@ include_once __DIR__ . '/includes/header.php';
     </div>
   </section>
 
-  <!-- Feature Spotlight: Prodoral R200 Technology -->
+  <!-- Feature Spotlight: Prodoral R6-1 Technology -->
   <section class="feature-highlight-section" aria-labelledby="feature-prodoral-title">
     <div class="container">
       <div class="feature-grid">
         <div class="feature-image-card">
-          <img src="assets/images/prodoral.png" alt="Máquina de Sellado Prodoral R200 en Cañerías de Gas" loading="lazy" width="580" height="400">
+          <img src="assets/images/prodoral.webp" alt="Máquina de Sellado Prodoral R6-1 en Cañerías de Gas" loading="lazy" width="580" height="400">
         </div>
         <div class="feature-content">
           <span class="section-subtitle gold">Tecnología Alemana Exclusiva</span>
-          <h2 id="feature-prodoral-title">Sellado de Cañerías de Gas con Prodoral R200</h2>
+          <h2 id="feature-prodoral-title">Sellado de Cañerías de Gas con Prodoral R6-1</h2>
           <p class="feature-desc">
-            ¿Tu red de gas tiene una microfuga subterránea o empotrada y no quieres romper tu piso de parquet, porcelanato o muros? <strong>Prodoral R200</strong> es el método número 1 en Europa y Chile para sellar cañerías desde el interior.
+            ¿Tu red de gas tiene una microfuga subterránea o empotrada y no quieres romper tu piso de parquet, porcelanato o muros? <strong>Prodoral R6-1</strong> es el método número 1 en Europa y Chile para sellar cañerías desde el interior.
           </p>
 
           <div class="feature-benefits-list">
@@ -419,7 +421,7 @@ include_once __DIR__ . '/includes/header.php';
           </div>
 
           <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-            <a href="prodoral.php" class="btn btn-primary">Conocer Tecnología Prodoral &raquo;</a>
+            <a href="prodoral" class="btn btn-primary">Conocer Tecnología Prodoral &raquo;</a>
             <a href="tel:932237072" class="btn btn-danger">Consultar Factibilidad: 9 3223 7072</a>
           </div>
         </div>
@@ -467,7 +469,7 @@ include_once __DIR__ . '/includes/header.php';
 
               <div class="calc-option-card" data-service="prodoral">
                 <div class="calc-option-icon">🧪</div>
-                <div class="calc-option-title">Sellado Prodoral</div>
+                <div class="calc-option-title">Sellado Prodoral R6-1</div>
                 <div class="calc-option-desc">Reparación sin romper pisos ni muros</div>
               </div>
 
@@ -629,7 +631,7 @@ include_once __DIR__ . '/includes/header.php';
       <!-- Verified SEC Installer & QR Showcase Card -->
       <div class="sec-installer-showcase">
         <div class="installer-avatar-wrap">
-          <img src="assets/images/domingo-isain-caamano-gasfiter-sec.jpg" alt="Domingo Isaín Caamaño - Instalador Certificado SEC" class="installer-avatar-img" width="140" height="140">
+          <img src="assets/images/domingo-isain-caamano-gasfiter-sec.webp" alt="Domingo Isaín Caamaño - Instalador Certificado SEC" class="installer-avatar-img" width="140" height="140">
           <span class="installer-sec-badge">AUTORIZADO SEC</span>
         </div>
 
@@ -651,7 +653,7 @@ include_once __DIR__ . '/includes/header.php';
         </div>
 
         <div class="qr-verification-box">
-          <img src="assets/images/qr-sec.png" alt="Código QR Verificación Oficial SEC" class="qr-verification-img" width="130" height="130">
+          <img src="assets/images/qr-sec.webp" alt="Código QR Verificación Oficial SEC" class="qr-verification-img" width="130" height="130">
           <div class="qr-verification-label">Escanea con tu Celular</div>
           <div class="qr-verification-sub">Valida registro oficial en la SEC</div>
         </div>
@@ -667,7 +669,7 @@ include_once __DIR__ . '/includes/header.php';
       <div class="section-header">
         <span class="section-subtitle">Cobertura en Toda la RM</span>
         <h2 class="section-title" id="coverage-title">Gásfiter Certificado a Domicilio en Tu Comuna</h2>
-        <p class="section-desc">Móviles de emergencia equipados distribuidos estratégicamente para llegar en 45 minutos.</p>
+        <p class="section-desc">Móviles de emergencia equipados distribuidos estratégicamente para un tiempo de respuesta de 30 a 45 minutos.</p>
       </div>
 
       <div class="comunas-search-box">
@@ -676,32 +678,32 @@ include_once __DIR__ . '/includes/header.php';
       </div>
 
       <div class="comunas-tags-cloud">
-        <a href="cobertura.php" class="comuna-pill"><span class="dot"></span> Las Condes</a>
-        <a href="cobertura.php" class="comuna-pill"><span class="dot"></span> Providencia</a>
-        <a href="cobertura.php" class="comuna-pill"><span class="dot"></span> Vitacura</a>
-        <a href="cobertura.php" class="comuna-pill"><span class="dot"></span> Ñuñoa</a>
-        <a href="cobertura.php" class="comuna-pill"><span class="dot"></span> Santiago Centro</a>
-        <a href="cobertura.php" class="comuna-pill"><span class="dot"></span> Lo Barnechea</a>
-        <a href="cobertura.php" class="comuna-pill"><span class="dot"></span> La Reina</a>
-        <a href="cobertura.php" class="comuna-pill"><span class="dot"></span> Peñalolén</a>
-        <a href="cobertura.php" class="comuna-pill"><span class="dot"></span> La Florida</a>
-        <a href="cobertura.php" class="comuna-pill"><span class="dot"></span> San Miguel</a>
-        <a href="cobertura.php" class="comuna-pill"><span class="dot"></span> Macul</a>
-        <a href="cobertura.php" class="comuna-pill"><span class="dot"></span> Maipú</a>
-        <a href="cobertura.php" class="comuna-pill"><span class="dot"></span> Puente Alto</a>
-        <a href="cobertura.php" class="comuna-pill"><span class="dot"></span> San Joaquín</a>
-        <a href="cobertura.php" class="comuna-pill"><span class="dot"></span> Independencia</a>
-        <a href="cobertura.php" class="comuna-pill"><span class="dot"></span> Recoleta</a>
-        <a href="cobertura.php" class="comuna-pill"><span class="dot"></span> Quinta Normal</a>
-        <a href="cobertura.php" class="comuna-pill"><span class="dot"></span> Estación Central</a>
-        <a href="cobertura.php" class="comuna-pill"><span class="dot"></span> Pudahuel</a>
-        <a href="cobertura.php" class="comuna-pill"><span class="dot"></span> Quilicura</a>
-        <a href="cobertura.php" class="comuna-pill"><span class="dot"></span> Huechuraba</a>
-        <a href="cobertura.php" class="comuna-pill"><span class="dot"></span> Cerrillos</a>
-        <a href="cobertura.php" class="comuna-pill"><span class="dot"></span> Conchalí</a>
-        <a href="cobertura.php" class="comuna-pill"><span class="dot"></span> La Cisterna</a>
-        <a href="cobertura.php" class="comuna-pill"><span class="dot"></span> San Bernardo</a>
-        <a href="cobertura.php" class="comuna-pill"><span class="dot"></span> Chicureo / Colina</a>
+        <a href="cobertura" class="comuna-pill"><span class="dot"></span> Las Condes</a>
+        <a href="cobertura" class="comuna-pill"><span class="dot"></span> Providencia</a>
+        <a href="cobertura" class="comuna-pill"><span class="dot"></span> Vitacura</a>
+        <a href="cobertura" class="comuna-pill"><span class="dot"></span> Ñuñoa</a>
+        <a href="cobertura" class="comuna-pill"><span class="dot"></span> Santiago Centro</a>
+        <a href="cobertura" class="comuna-pill"><span class="dot"></span> Lo Barnechea</a>
+        <a href="cobertura" class="comuna-pill"><span class="dot"></span> La Reina</a>
+        <a href="cobertura" class="comuna-pill"><span class="dot"></span> Peñalolén</a>
+        <a href="cobertura" class="comuna-pill"><span class="dot"></span> La Florida</a>
+        <a href="cobertura" class="comuna-pill"><span class="dot"></span> San Miguel</a>
+        <a href="cobertura" class="comuna-pill"><span class="dot"></span> Macul</a>
+        <a href="cobertura" class="comuna-pill"><span class="dot"></span> Maipú</a>
+        <a href="cobertura" class="comuna-pill"><span class="dot"></span> Puente Alto</a>
+        <a href="cobertura" class="comuna-pill"><span class="dot"></span> San Joaquín</a>
+        <a href="cobertura" class="comuna-pill"><span class="dot"></span> Independencia</a>
+        <a href="cobertura" class="comuna-pill"><span class="dot"></span> Recoleta</a>
+        <a href="cobertura" class="comuna-pill"><span class="dot"></span> Quinta Normal</a>
+        <a href="cobertura" class="comuna-pill"><span class="dot"></span> Estación Central</a>
+        <a href="cobertura" class="comuna-pill"><span class="dot"></span> Pudahuel</a>
+        <a href="cobertura" class="comuna-pill"><span class="dot"></span> Quilicura</a>
+        <a href="cobertura" class="comuna-pill"><span class="dot"></span> Huechuraba</a>
+        <a href="cobertura" class="comuna-pill"><span class="dot"></span> Cerrillos</a>
+        <a href="cobertura" class="comuna-pill"><span class="dot"></span> Conchalí</a>
+        <a href="cobertura" class="comuna-pill"><span class="dot"></span> La Cisterna</a>
+        <a href="cobertura" class="comuna-pill"><span class="dot"></span> San Bernardo</a>
+        <a href="cobertura" class="comuna-pill"><span class="dot"></span> Chicureo / Colina</a>
       </div>
     </div>
   </section>
@@ -728,11 +730,11 @@ include_once __DIR__ . '/includes/header.php';
 
         <div class="faq-item">
           <button class="faq-question" type="button">
-            <span>¿En qué consiste el sellado con Prodoral y cuándo se recomienda?</span>
+            <span>¿En qué consiste el sellado con Prodoral R6-1 y cuándo se recomienda?</span>
             <span class="faq-icon">▼</span>
           </button>
           <div class="faq-answer">
-            <p>Prodoral R200 es un polímero sellador líquido de ingeniería alemana aprobado internacionalmente. Se inyecta a presión dentro de la cañería de gas para sellar microporosidades y uniones defectuosas desde adentro. Se recomienda cuando la cañería pasa bajo pisos flotantes, cerámicas costosas o dentro de muros de concreto, evitando obras de demolición y ahorrando hasta un 65% del costo.</p>
+            <p>Prodoral R6-1 es un polímero sellador líquido de ingeniería alemana aprobado internacionalmente para redes de gas. Se inyecta a presión dentro de la cañería de gas para sellar microporosidades y uniones defectuosas desde adentro. Se recomienda cuando la cañería pasa bajo pisos flotantes, cerámicas costosas o dentro de muros de concreto, evitando obras de demolición y ahorrando hasta un 65% del costo.</p>
           </div>
         </div>
 
@@ -748,7 +750,7 @@ include_once __DIR__ . '/includes/header.php';
 
         <div class="faq-item">
           <button class="faq-question" type="button">
-            <span>¿Cuánto demoran en llegar ante una urgencia de gas o destape?</span>
+            <span>¿Cuánto demoran en responder ante una urgencia de gas o destape?</span>
             <span class="faq-icon">▼</span>
           </button>
           <div class="faq-answer">

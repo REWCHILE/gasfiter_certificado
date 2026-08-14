@@ -1,7 +1,9 @@
 <?php
-$page_title = "Reparación y Mantención de Calefont en Santiago | Gásfiter SEC";
+$page_title = "📞 9 3223 7072 | Reparación de Calefont en Santiago 24 Horas";
 $page_description = "Servicio técnico multimarca para calefont y calderas en Santiago. Junkers, Splendid, Mademsa, Trotter, Neckar, Rheem. Repuestos originales y garantía. Llama al 9 3223 7072.";
-$page_type = "calefont";
+$page_type = "website";
+$canonical_url = "https://gasfiter-certificado.cl/calefont";
+$og_image = "https://gasfiter-certificado.cl/assets/images/calefont.webp";
 
 include_once __DIR__ . '/includes/header.php';
 ?>
@@ -57,7 +59,7 @@ include_once __DIR__ . '/includes/header.php';
       <div class="hero-card-form">
         <div class="hero-card-header">
           <span class="hero-card-tag" style="background: #fef3c7; color: #b45309;">Calefont & Calderas</span>
-          <h3 class="hero-card-title">Agenda Tu Técnico en Calefont</h3>
+          <h2 class="hero-card-title">Agenda Tu Técnico en Calefont</h2>
           <p class="hero-card-subtitle">Diagnóstico profesional a domicilio</p>
         </div>
 

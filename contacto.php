@@ -1,7 +1,9 @@
 <?php
-$page_title = "Contacto Central Gásfiter Certificado SEC | Atención 24 Horas";
+$page_title = "📞 9 3223 7072 | Central Gásfiter Certificado SEC 24 Horas";
 $page_description = "Contáctanos las 24 horas para emergencias de gas, fugas, mantención de calefont o destapes. Teléfono directo: 9 3223 7072. Base central en Santiago de Chile.";
-$page_type = "contacto";
+$page_type = "website";
+$canonical_url = "https://gasfiter-certificado.cl/contacto";
+$og_image = "https://gasfiter-certificado.cl/assets/images/og-share-gasfiter.jpg";
 
 include_once __DIR__ . '/includes/header.php';
 ?>
@@ -72,7 +74,7 @@ include_once __DIR__ . '/includes/header.php';
         <div class="hero-card-form" style="box-shadow: var(--shadow-xl);">
           <div class="hero-card-header">
             <span class="hero-card-tag">Formulario Web</span>
-            <h3 class="hero-card-title">Envíanos un Mensaje</h3>
+            <h2 class="hero-card-title">Envíanos un Mensaje</h2>
             <p class="hero-card-subtitle">Te responderemos a la brevedad</p>
           </div>
 
@@ -112,7 +114,7 @@ include_once __DIR__ . '/includes/header.php';
               <label class="form-label">Servicio Requerido *</label>
               <select name="servicio" class="form-control" required>
                 <option value="Fuga de Gas 24/7">Detección de Fuga de Gas (Urgente)</option>
-                <option value="Sellado Prodoral">Sellado Prodoral sin Romper</option>
+                <option value="Sellado Prodoral R6-1">Sellado Prodoral R6-1 sin Romper</option>
                 <option value="Sello Verde SEC">Certificación Sello Verde SEC</option>
                 <option value="Calefont o Caldera">Mantención / Reparación Calefont</option>
                 <option value="Destape de Cañerías">Destape de Cañerías / Alcantarillado</option>

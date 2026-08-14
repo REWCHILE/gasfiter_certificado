@@ -1,7 +1,9 @@
 <?php
-$page_title = "Gásfiter Certificado SEC | Sello Verde y Trámite TC6 en Santiago";
+$page_title = "📞 9 3223 7072 | Gásfiter Certificado SEC & Sello Verde Santiago";
 $page_description = "Instaladores autorizados SEC en Santiago. Tramitación de Sello Verde, levantamiento de sellos rojos y amarillos, declaraciones TC6 y proyectos de gas. Llama al 9 3223 7072.";
-$page_type = "sec";
+$page_type = "website";
+$canonical_url = "https://gasfiter-certificado.cl/gasfiter-sec";
+$og_image = "https://gasfiter-certificado.cl/assets/images/hero-sec.webp";
 
 include_once __DIR__ . '/includes/header.php';
 ?>
@@ -57,7 +59,7 @@ include_once __DIR__ . '/includes/header.php';
       <div class="hero-card-form">
         <div class="hero-card-header">
           <span class="hero-card-tag" style="background: #ccfbf1; color: #0f766e;">Inspección SEC</span>
-          <h3 class="hero-card-title">Cotiza Regularización SEC</h3>
+          <h2 class="hero-card-title">Cotiza Regularización SEC</h2>
           <p class="hero-card-subtitle">Casas, Edificios y Locales Comerciales</p>
         </div>
 
@@ -145,7 +147,7 @@ include_once __DIR__ . '/includes/header.php';
       <!-- Verified SEC Installer & QR Showcase Card -->
       <div class="sec-installer-showcase">
         <div class="installer-avatar-wrap">
-          <img src="assets/images/domingo-isain-caamano-gasfiter-sec.jpg" alt="Domingo Isaín Caamaño - Instalador Autorizado SEC" class="installer-avatar-img" width="140" height="140">
+          <img src="assets/images/domingo-isain-caamano-gasfiter-sec.webp" alt="Domingo Isaín Caamaño - Instalador Autorizado SEC" class="installer-avatar-img" width="140" height="140">
           <span class="installer-sec-badge">AUTORIZADO SEC</span>
         </div>
 
@@ -167,7 +169,7 @@ include_once __DIR__ . '/includes/header.php';
         </div>
 
         <div class="qr-verification-box">
-          <img src="assets/images/qr-sec.png" alt="Código QR Verificación Oficial SEC" class="qr-verification-img" width="130" height="130">
+          <img src="assets/images/qr-sec.webp" alt="Código QR Verificación Oficial SEC" class="qr-verification-img" width="130" height="130">
           <div class="qr-verification-label">Escanea con tu Celular</div>
           <div class="qr-verification-sub">Valida registro oficial en la SEC</div>
         </div>

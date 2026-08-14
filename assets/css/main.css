@@ -3,7 +3,6 @@
    Modern, Ultra-responsive, High-Conversion Plumbing & Gas SEC Platform
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
 
 :root {
   /* Brand Color Palette */
@@ -152,7 +151,7 @@ button, input, select, textarea {
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  color: #ff8b77;
+  color: #ffb4a6;
 }
 
 .radar-dot {
@@ -160,22 +159,33 @@ button, input, select, textarea {
   height: 8px;
   background-color: var(--safety-red);
   border-radius: 50%;
-  box-shadow: 0 0 0 0 rgba(217, 56, 30, 0.7);
-  animation: pulse-radar 1.5s infinite;
+  position: relative;
+  display: inline-block;
+}
+
+.radar-dot::after {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: var(--safety-red);
+  opacity: 0.8;
+  animation: pulse-radar 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+  will-change: transform, opacity;
+  pointer-events: none;
 }
 
 @keyframes pulse-radar {
   0% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(217, 56, 30, 0.7);
-  }
-  70% {
-    transform: scale(1);
-    box-shadow: 0 0 0 7px rgba(217, 56, 30, 0);
+    transform: scale(0.5);
+    opacity: 0.85;
   }
   100% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(217, 56, 30, 0);
+    transform: scale(2.2);
+    opacity: 0;
   }
 }
 
@@ -707,27 +717,27 @@ button, input, select, textarea {
 }
 
 .hero-section.hero-home {
-  background-image: linear-gradient(135deg, rgba(7, 20, 44, 0.92) 0%, rgba(15, 43, 92, 0.85) 55%, rgba(9, 26, 56, 0.94) 100%), url('../images/hero-home-main.png');
+  background-image: linear-gradient(135deg, rgba(7, 20, 44, 0.92) 0%, rgba(15, 43, 92, 0.85) 55%, rgba(9, 26, 56, 0.94) 100%), url('../images/hero-home-main.webp');
 }
 
 .hero-section.hero-fuga {
-  background-image: linear-gradient(135deg, rgba(28, 8, 8, 0.92) 0%, rgba(69, 10, 10, 0.85) 55%, rgba(15, 43, 92, 0.92) 100%), url('../images/hero-fuga-gas.png');
+  background-image: linear-gradient(135deg, rgba(28, 8, 8, 0.92) 0%, rgba(69, 10, 10, 0.85) 55%, rgba(15, 43, 92, 0.92) 100%), url('../images/hero-fuga-gas.webp');
 }
 
 .hero-section.hero-prodoral {
-  background-image: linear-gradient(135deg, rgba(2, 44, 34, 0.92) 0%, rgba(6, 78, 59, 0.85) 55%, rgba(15, 43, 92, 0.92) 100%), url('../images/hero-prodoral.png');
+  background-image: linear-gradient(135deg, rgba(2, 44, 34, 0.92) 0%, rgba(6, 78, 59, 0.85) 55%, rgba(15, 43, 92, 0.92) 100%), url('../images/hero-prodoral.webp');
 }
 
 .hero-section.hero-sec {
-  background-image: linear-gradient(135deg, rgba(6, 32, 30, 0.92) 0%, rgba(15, 118, 110, 0.85) 55%, rgba(15, 43, 92, 0.92) 100%), url('../images/hero-sec.png');
+  background-image: linear-gradient(135deg, rgba(6, 32, 30, 0.92) 0%, rgba(15, 118, 110, 0.85) 55%, rgba(15, 43, 92, 0.92) 100%), url('../images/hero-sec.webp');
 }
 
 .hero-section.hero-calefont {
-  background-image: linear-gradient(135deg, rgba(46, 26, 5, 0.92) 0%, rgba(120, 53, 15, 0.85) 55%, rgba(15, 43, 92, 0.92) 100%), url('../images/hero-calefont.png');
+  background-image: linear-gradient(135deg, rgba(46, 26, 5, 0.92) 0%, rgba(120, 53, 15, 0.85) 55%, rgba(15, 43, 92, 0.92) 100%), url('../images/hero-calefont.webp');
 }
 
 .hero-section.hero-destapes {
-  background-image: linear-gradient(135deg, rgba(30, 27, 75, 0.92) 0%, rgba(49, 46, 129, 0.85) 55%, rgba(15, 43, 92, 0.92) 100%), url('../images/hero-destapes.png');
+  background-image: linear-gradient(135deg, rgba(30, 27, 75, 0.92) 0%, rgba(49, 46, 129, 0.85) 55%, rgba(15, 43, 92, 0.92) 100%), url('../images/hero-destapes.webp');
 }
 
 .hero-section::before {
@@ -2041,21 +2051,32 @@ button, input, select, textarea {
   align-items: center;
   justify-content: center;
   font-size: 2rem;
-  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5);
+  box-shadow: 0 4px 16px rgba(18, 140, 126, 0.4);
   z-index: 900;
   transition: transform var(--transition-fast);
-  animation: pulse-whatsapp 2s infinite;
+}
+
+.whatsapp-float-btn::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  background: var(--whatsapp-green);
+  opacity: 0.6;
+  z-index: -1;
+  animation: pulse-whatsapp 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+  will-change: transform, opacity;
+  pointer-events: none;
 }
 
 @keyframes pulse-whatsapp {
   0% {
-    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
-  }
-  70% {
-    box-shadow: 0 0 0 16px rgba(37, 211, 102, 0);
+    transform: scale(0.85);
+    opacity: 0.7;
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    transform: scale(1.45);
+    opacity: 0;
   }
 }
 

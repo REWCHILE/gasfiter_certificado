@@ -1,7 +1,9 @@
 <?php
-$page_title = "Destape de Cañerías y Alcantarillado 24/7 en Santiago | Plomería";
+$page_title = "📞 9 3223 7072 | Destape de Cañerías y Alcantarillado 24/7";
 $page_description = "Servicio urgente 24 horas de destape de cañerías, alcantarillados, WC, lavaplatos y cámaras desgrasadoras con máquinas eléctricas de alta potencia. Llama al 9 3223 7072.";
-$page_type = "destape";
+$page_type = "website";
+$canonical_url = "https://gasfiter-certificado.cl/destape-alcantarillado";
+$og_image = "https://gasfiter-certificado.cl/assets/images/hero-destapes.webp";
 
 include_once __DIR__ . '/includes/header.php';
 ?>
@@ -57,8 +59,8 @@ include_once __DIR__ . '/includes/header.php';
       <div class="hero-card-form">
         <div class="hero-card-header">
           <span class="hero-card-tag" style="background: #e0e7ff; color: #4338ca;">Destapes de Urgencia</span>
-          <h3 class="hero-card-title">Solicita Destape Express</h3>
-          <p class="hero-card-subtitle">Llegamos a tu domicilio en 45 minutos</p>
+          <h2 class="hero-card-title">Solicita Destape Express</h2>
+          <p class="hero-card-subtitle">Atención y respuesta en 45 minutos</p>
         </div>
 
         <form class="ajax-contact-form" method="POST">

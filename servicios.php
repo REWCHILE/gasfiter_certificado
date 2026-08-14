@@ -1,7 +1,9 @@
 <?php
-$page_title = "Servicios de Gasfitería Certificada SEC en Santiago | Catálogo Oficial";
-$page_description = "Catálogo completo de servicios de gasfitería, detección de fugas de gas, sellado con Prodoral sin picar, Sello Verde SEC, reparación de calefont y destapes. Llama al 9 3223 7072.";
-$page_type = "servicios";
+$page_title = "📞 9 3223 7072 | Servicios de Gasfitería Certificada SEC Santiago";
+$page_description = "Catálogo completo de servicios de gasfitería, detección de fugas de gas, sellado con Prodoral R6-1 sin picar, Sello Verde SEC, reparación de calefont y destapes. Llama al 9 3223 7072.";
+$page_type = "website";
+$canonical_url = "https://gasfiter-certificado.cl/servicios";
+$og_image = "https://gasfiter-certificado.cl/assets/images/og-share-gasfiter.jpg";
 
 include_once __DIR__ . '/includes/header.php';
 ?>
@@ -19,7 +21,7 @@ include_once __DIR__ . '/includes/header.php';
       </p>
       <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
         <a href="tel:932237072" class="btn btn-danger btn-lg">Llamar Central 9 3223 7072</a>
-        <a href="cotizar.php" class="btn btn-outline-white btn-lg">Cotizador Online</a>
+        <a href="cotizar" class="btn btn-outline-white btn-lg">Cotizador Online</a>
       </div>
     </div>
   </section>
@@ -31,7 +33,7 @@ include_once __DIR__ . '/includes/header.php';
         <!-- 1. Fuga de Gas -->
         <article class="service-card">
           <div class="service-img-wrap">
-            <img src="assets/images/fuga-gas.png" alt="Detección de Fugas de Gas por Ultrasonido" loading="lazy">
+            <img src="assets/images/fuga-gas.webp" alt="Detección de Fugas de Gas por Ultrasonido" loading="lazy" width="380" height="210">
             <span class="service-tag urgent">🚨 24/7 Urgencias</span>
           </div>
           <div class="service-body">
@@ -43,7 +45,7 @@ include_once __DIR__ . '/includes/header.php';
               <li>✔️ Emisión de informe técnico para compañías de gas</li>
             </ul>
             <div class="service-footer">
-              <a href="fuga-de-gas.php" class="service-link">Página del Servicio &raquo;</a>
+              <a href="fuga-de-gas" class="service-link">Página del Servicio &raquo;</a>
               <a href="tel:932237072" class="btn btn-danger btn-sm">Pedir Urgencia</a>
             </div>
           </div>
@@ -52,11 +54,11 @@ include_once __DIR__ . '/includes/header.php';
         <!-- 2. Prodoral -->
         <article class="service-card">
           <div class="service-img-wrap">
-            <img src="assets/images/prodoral.png" alt="Sellado de Fugas con Prodoral R200 sin Picar" loading="lazy">
+            <img src="assets/images/prodoral.webp" alt="Sellado de Fugas con Prodoral R6-1 sin Picar" loading="lazy" width="380" height="210">
             <span class="service-tag">🧪 Sin Picar</span>
           </div>
           <div class="service-body">
-            <h2 class="service-title">Sellado de Cañerías con Prodoral R200</h2>
+            <h2 class="service-title">Sellado de Cañerías con Prodoral R6-1</h2>
             <p class="service-text">Inyección de polímero alemán para sellar microporosidades y fugas embutidas sin romper pisos, baldosas ni muros.</p>
             <ul class="service-bullets">
               <li>✔️ Cero escombros y cero demolición</li>
@@ -64,8 +66,8 @@ include_once __DIR__ . '/includes/header.php';
               <li>✔️ Ahorro de hasta un 65% respecto a obras civiles</li>
             </ul>
             <div class="service-footer">
-              <a href="prodoral.php" class="service-link">Página del Servicio &raquo;</a>
-              <a href="cotizar.php" class="btn btn-primary btn-sm">Cotizar</a>
+              <a href="prodoral" class="service-link">Página del Servicio &raquo;</a>
+              <a href="cotizar" class="btn btn-primary btn-sm">Cotizar</a>
             </div>
           </div>
         </article>
@@ -73,7 +75,7 @@ include_once __DIR__ . '/includes/header.php';
         <!-- 3. Sello Verde SEC -->
         <article class="service-card">
           <div class="service-img-wrap">
-            <img src="assets/images/hero-gasfiter.png" alt="Certificación Sello Verde SEC e Inspección TC6" loading="lazy">
+            <img src="assets/images/hero-sec.webp" alt="Certificación Sello Verde SEC e Inspección TC6" loading="lazy" width="380" height="210">
             <span class="service-tag green">🛡️ Certificación Oficial</span>
           </div>
           <div class="service-body">
@@ -85,8 +87,8 @@ include_once __DIR__ . '/includes/header.php';
               <li>✔️ Asesoría experta a comunidades y administraciones</li>
             </ul>
             <div class="service-footer">
-              <a href="gasfiter-sec.php" class="service-link">Página del Servicio &raquo;</a>
-              <a href="cotizar.php" class="btn btn-primary btn-sm">Solicitar SEC</a>
+              <a href="gasfiter-sec" class="service-link">Página del Servicio &raquo;</a>
+              <a href="cotizar" class="btn btn-primary btn-sm">Solicitar SEC</a>
             </div>
           </div>
         </article>
@@ -94,7 +96,7 @@ include_once __DIR__ . '/includes/header.php';
         <!-- 4. Calefont -->
         <article class="service-card">
           <div class="service-img-wrap">
-            <img src="assets/images/calefont.png" alt="Mantención y Reparación de Calefont Multimarca" loading="lazy">
+            <img src="assets/images/calefont.webp" alt="Mantención y Reparación de Calefont Multimarca" loading="lazy" width="380" height="210">
             <span class="service-tag">⚡ Todas las Marcas</span>
           </div>
           <div class="service-body">
@@ -106,7 +108,7 @@ include_once __DIR__ . '/includes/header.php';
               <li>✔️ Instalación bajo normativa de evacuación de gases</li>
             </ul>
             <div class="service-footer">
-              <a href="calefont.php" class="service-link">Página del Servicio &raquo;</a>
+              <a href="calefont" class="service-link">Página del Servicio &raquo;</a>
               <a href="tel:932237072" class="btn btn-danger btn-sm">Agendar</a>
             </div>
           </div>
@@ -115,7 +117,7 @@ include_once __DIR__ . '/includes/header.php';
         <!-- 5. Destapes -->
         <article class="service-card">
           <div class="service-img-wrap">
-            <img src="assets/images/fuga-gas.png" alt="Destape de Cañerías y Alcantarillado" loading="lazy">
+            <img src="assets/images/hero-destapes.webp" alt="Destape de Cañerías y Alcantarillado" loading="lazy" width="380" height="210">
             <span class="service-tag urgent">⚡ Máquinas Eléctricas</span>
           </div>
           <div class="service-body">
@@ -127,7 +129,7 @@ include_once __DIR__ . '/includes/header.php';
               <li>✔️ Cobertura de emergencia en todo Santiago</li>
             </ul>
             <div class="service-footer">
-              <a href="destape-alcantarillado.php" class="service-link">Página del Servicio &raquo;</a>
+              <a href="destape-alcantarillado" class="service-link">Página del Servicio &raquo;</a>
               <a href="tel:932237072" class="btn btn-danger btn-sm">Llamar 24/7</a>
             </div>
           </div>
@@ -136,7 +138,7 @@ include_once __DIR__ . '/includes/header.php';
         <!-- 6. Gasfitería General -->
         <article class="service-card">
           <div class="service-img-wrap">
-            <img src="assets/images/hero-gasfiter.png" alt="Instalaciones y Gasfitería General" loading="lazy">
+            <img src="assets/images/hero-gasfiter.webp" alt="Instalaciones y Gasfitería General" loading="lazy" width="380" height="210">
             <span class="service-tag">🔧 Plomería Integral</span>
           </div>
           <div class="service-body">
@@ -148,8 +150,8 @@ include_once __DIR__ . '/includes/header.php';
               <li>✔️ Presupuestos transparentes sin sorpresas</li>
             </ul>
             <div class="service-footer">
-              <a href="contacto.php" class="service-link">Contáctanos &raquo;</a>
-              <a href="cotizar.php" class="btn btn-primary btn-sm">Cotizar Online</a>
+              <a href="contacto" class="service-link">Contáctanos &raquo;</a>
+              <a href="cotizar" class="btn btn-primary btn-sm">Cotizar Online</a>
             </div>
           </div>
         </article>
