@@ -1,0 +1,225 @@
+/* ==========================================================================
+   RESPONSIVE STYLES & MOBILE OPTIMIZATIONS
+   ========================================================================== */
+
+@media (max-width: 1200px) {
+  .nav-menu-desktop {
+    gap: 0.2rem;
+  }
+  .nav-link {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.4rem;
+  }
+  .btn-header-call, .btn-header-whatsapp {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.7rem;
+  }
+}
+
+@media (max-width: 1080px) {
+  .nav-menu-desktop, .header-actions {
+    display: none;
+  }
+
+  .btn-hamburger {
+    display: flex;
+  }
+
+  .navbar-container {
+    height: 70px;
+  }
+
+  .brand-logo-img {
+    height: 46px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .trust-sec-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .reviews-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .calc-options-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  /* Navigation & Topbar */
+  .topbar-container {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .topbar-right {
+    display: none;
+  }
+
+  .nav-menu-desktop, .header-actions {
+    display: none;
+  }
+
+  .btn-hamburger {
+    display: flex;
+  }
+
+  .navbar-container {
+    height: 66px;
+  }
+
+  .brand-logo-img {
+    height: 44px;
+  }
+
+  .brand-name {
+    font-size: 1.05rem;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    padding: 2.5rem 0 3.5rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .hero-lead {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-trust-bullets {
+    grid-template-columns: 1fr;
+    gap: 0.65rem;
+  }
+
+  .hero-ctas {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-ctas .btn {
+    width: 100%;
+  }
+
+  .hero-card-form {
+    padding: 1.5rem;
+  }
+
+  /* Grids */
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .trust-sec-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .section-padding {
+    padding: 3.5rem 0;
+  }
+
+  .section-title {
+    font-size: 1.85rem;
+  }
+
+  .feature-content h2 {
+    font-size: 1.85rem;
+  }
+
+  .feature-benefits-list {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-banner-title {
+    font-size: 1.95rem;
+  }
+
+  /* Calculator */
+  .calc-options-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .calculator-body {
+    padding: 1.5rem;
+  }
+
+  .step-indicator {
+    padding: 0.85rem 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  /* Floating UI on mobile */
+  .whatsapp-float-btn {
+    bottom: 5rem;
+    right: 1.25rem;
+    width: 54px;
+    height: 54px;
+    font-size: 1.7rem;
+  }
+
+  .mobile-bottom-bar {
+    display: block;
+  }
+
+  .social-toast-container {
+    bottom: 8.5rem;
+    left: 1rem;
+    right: 1rem;
+  }
+
+  .social-toast {
+    max-width: 100%;
+  }
+
+  body {
+    padding-bottom: 70px;
+  }
+}

@@ -1,0 +1,14 @@
+[
+    {
+        "id": "lead_6a7e57c869d550.40508595",
+        "fecha": "2026-08-13 23:48:24",
+        "nombre": "Test Juan Pérez",
+        "telefono": "+56 9 1234 5678",
+        "comuna": "Las Condes",
+        "servicio": "Detección Fuga de Gas",
+        "inmueble": "Casa",
+        "mensaje": "Prueba de funcionamiento del cotizador y formulario",
+        "ip": "127.0.0.1",
+        "estado": "nuevo"
+    }
+]
