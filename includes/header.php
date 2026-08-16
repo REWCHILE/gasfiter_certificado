@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es-CL">
 <head>
+  <base href="/">
   <?php include_once __DIR__ . '/seo-meta.php'; ?>
   
   <!-- Preconnect & Optimized Fonts for Google PageSpeed -->

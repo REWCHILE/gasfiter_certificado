@@ -3,7 +3,7 @@ $page_title = "📞 9 3223 7072 | Destape de Cañerías y Alcantarillado 24/7";
 $page_description = "Servicio urgente 24 horas de destape de cañerías, alcantarillados, WC, lavaplatos y cámaras desgrasadoras con máquinas eléctricas de alta potencia. Llama al 9 3223 7072.";
 $page_type = "website";
 $canonical_url = "https://gasfiter-certificado.cl/destape-alcantarillado";
-$og_image = "https://gasfiter-certificado.cl/assets/images/hero-destapes.webp";
+$og_image = "https://gasfiter-certificado.cl/assets/images/og-share-destapes.jpg";
 
 include_once __DIR__ . '/includes/header.php';
 ?>

@@ -3,7 +3,7 @@
 # High-Performance Caching, Gzip Compression, Security & Clean URLs (No .php)
 # ==============================================================================
 
-# 1. CLEAN URLS (REWRITE .PHP EXTENSION)
+# 1. CLEAN URLS & SEO ROUTING (GOOGLE SEARCH CONSOLE 77 URLS SUPPORT)
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
@@ -17,10 +17,18 @@
   RewriteCond %{REQUEST_METHOD} !POST
   RewriteRule ^ %1 [R=301,L]
 
-  # Internal rewrite: If filename.php exists, rewrite /filename to filename.php
+  # Route /home and /home/ directly to index.php
+  RewriteRule ^home/?$ index.php [L,QSA]
+
+  # Internal rewrite: If exact filename.php exists, rewrite /filename to filename.php
   RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond %{REQUEST_FILENAME}\.php -f
+  RewriteCond %{DOCUMENT_ROOT}/$1.php -f
   RewriteRule ^([^/]+)/?$ $1.php [L,QSA]
+
+  # Dynamic SEO landing pages: Route gasfiter-* and custom slugs to landing.php
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^([^/]+)/?$ landing.php?slug=$1 [L,QSA]
 </IfModule>
 
 # 2. GZIP / DEFLATE COMPRESSION (Google PageSpeed Optimization)

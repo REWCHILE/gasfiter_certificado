@@ -3,7 +3,7 @@ $page_title = "📞 9 3223 7072 | Sellado de Fugas con Prodoral R6-1 sin Picar";
 $page_description = "Reparamos fugas de gas subterráneas y embutidas sin romper baldosas, cerámicas ni muros gracias a la inyección de Prodoral R6-1. Garantía 5 años. Llama al 9 3223 7072.";
 $page_type = "website";
 $canonical_url = "https://gasfiter-certificado.cl/prodoral";
-$og_image = "https://gasfiter-certificado.cl/assets/images/prodoral.webp";
+$og_image = "https://gasfiter-certificado.cl/assets/images/og-share-prodoral.jpg";
 
 include_once __DIR__ . '/includes/header.php';
 ?>

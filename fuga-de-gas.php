@@ -3,7 +3,7 @@ $page_title = "📞 9 3223 7072 | Detección Fugas de Gas 24/7 en Santiago SEC";
 $page_description = "Servicio de urgencia 24 horas para detección y reparación de fugas de gas en Santiago. Detector electrónico, gas trazador, prueba de hermeticidad y reposición inmediata. Llama al 9 3223 7072.";
 $page_type = "website";
 $canonical_url = "https://gasfiter-certificado.cl/fuga-de-gas";
-$og_image = "https://gasfiter-certificado.cl/assets/images/fuga-gas.webp";
+$og_image = "https://gasfiter-certificado.cl/assets/images/og-share-fuga-gas.jpg";
 
 include_once __DIR__ . '/includes/header.php';
 ?>

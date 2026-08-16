@@ -53,6 +53,7 @@ $page_type = isset($page_type) ? $page_type : "website";
 <meta property="og:description" content="<?php echo htmlspecialchars($page_description); ?>">
 <meta property="og:image" content="<?php echo htmlspecialchars($og_image); ?>">
 <meta property="og:image:secure_url" content="<?php echo htmlspecialchars($og_image); ?>">
+<meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="<?php echo htmlspecialchars($og_image_width); ?>">
 <meta property="og:image:height" content="<?php echo htmlspecialchars($og_image_height); ?>">
 <meta property="og:image:alt" content="<?php echo htmlspecialchars($og_image_alt); ?>">
