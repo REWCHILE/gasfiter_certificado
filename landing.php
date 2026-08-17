@@ -189,53 +189,65 @@ include_once __DIR__ . '/includes/header.php';
       </div>
 
       <div class="services-grid">
-        <div class="service-card">
-          <div class="service-card-image" style="background: linear-gradient(135deg, #1e293b, #0f172a); display: flex; align-items: center; justify-content: center; height: 180px;">
-            <img src="assets/images/fuga-gas.png" alt="Detección de Fugas de Gas" style="max-height: 140px; object-fit: contain;">
+        <article class="service-card">
+          <div class="service-img-wrap">
+            <img src="assets/images/fuga-gas.webp" alt="Detección de Fugas de Gas" loading="lazy" width="380" height="210">
+            <span class="service-tag urgent">🚨 Emergencias 24/7</span>
           </div>
-          <div class="service-card-body">
-            <span class="service-badge" style="background: #fee2e2; color: #dc2626;">Urgencias 24/7</span>
+          <div class="service-body">
             <h3 class="service-title">Detección de Fugas de Gas</h3>
-            <p class="service-desc">Rastreo electrónico con gas trazador, prueba de hermeticidad con manómetro y solución definitiva a cortes de suministro.</p>
-            <a href="fuga-de-gas" class="service-link">Ver servicio de fugas &raquo;</a>
+            <p class="service-text">Rastreo electrónico con gas trazador, prueba de hermeticidad con manómetro y solución definitiva a cortes de suministro.</p>
+            <div class="service-footer">
+              <a href="fuga-de-gas" class="service-link">Ver detalles &raquo;</a>
+              <a href="tel:932237072" class="btn btn-danger btn-sm">Llamar 24/7</a>
+            </div>
           </div>
-        </div>
+        </article>
 
-        <div class="service-card">
-          <div class="service-card-image" style="background: linear-gradient(135deg, #1e293b, #0f172a); display: flex; align-items: center; justify-content: center; height: 180px;">
-            <img src="assets/images/prodoral.png" alt="Sellado Prodoral R6-1" style="max-height: 140px; object-fit: contain;">
+        <article class="service-card">
+          <div class="service-img-wrap">
+            <img src="assets/images/prodoral.webp" alt="Sellado Prodoral R6-1" loading="lazy" width="380" height="210">
+            <span class="service-tag green">🧪 Sin Picar Muros</span>
           </div>
-          <div class="service-card-body">
-            <span class="service-badge" style="background: #dcfce7; color: #15803d;">Sin Picar Muros</span>
+          <div class="service-body">
             <h3 class="service-title">Sellado Prodoral R6-1</h3>
-            <p class="service-desc">Tecnología alemana de sellado interno de tuberías de gas mediante inyección de polímero. Aprobado por norma DIN EN 13090.</p>
-            <a href="prodoral" class="service-link">Conocer Prodoral &raquo;</a>
+            <p class="service-text">Tecnología alemana de sellado interno de tuberías de gas mediante inyección de polímero sin demolición.</p>
+            <div class="service-footer">
+              <a href="prodoral" class="service-link">Conocer Prodoral &raquo;</a>
+              <a href="https://wa.me/56932237072?text=Hola,%20quisiera%20cotizar%20sellado%20Prodoral%20R6-1." class="btn btn-primary btn-sm" target="_blank">Cotizar</a>
+            </div>
           </div>
-        </div>
+        </article>
 
-        <div class="service-card">
-          <div class="service-card-image" style="background: linear-gradient(135deg, #1e293b, #0f172a); display: flex; align-items: center; justify-content: center; height: 180px;">
-            <img src="assets/images/hero-sec.png" alt="Certificación Sello Verde SEC" style="max-height: 140px; object-fit: contain;">
+        <article class="service-card">
+          <div class="service-img-wrap">
+            <img src="assets/images/hero-sec.webp" alt="Certificación Sello Verde SEC" loading="lazy" width="380" height="210">
+            <span class="service-tag">📜 Normativa SEC</span>
           </div>
-          <div class="service-card-body">
-            <span class="service-badge" style="background: #e0e7ff; color: #4338ca;">Normativa SEC</span>
+          <div class="service-body">
             <h3 class="service-title">Certificación Sello Verde</h3>
-            <p class="service-desc">Levantamiento urgente de sellos rojos y amarillos, normalización de ventilaciones, proyectos de gas y trámites TC6.</p>
-            <a href="gasfiter-sec" class="service-link">Trámites SEC &raquo;</a>
+            <p class="service-text">Levantamiento urgente de sellos rojos y amarillos, normalización de ventilaciones, proyectos de gas y trámites TC6.</p>
+            <div class="service-footer">
+              <a href="gasfiter-sec" class="service-link">Trámites SEC &raquo;</a>
+              <a href="https://wa.me/56932237072?text=Hola,%20necesito%20levantar%20un%20sello%20rojo%20o%20tramitar%20Sello%20Verde." class="btn btn-primary btn-sm" target="_blank">Regularizar</a>
+            </div>
           </div>
-        </div>
+        </article>
 
-        <div class="service-card">
-          <div class="service-card-image" style="background: linear-gradient(135deg, #1e293b, #0f172a); display: flex; align-items: center; justify-content: center; height: 180px;">
-            <img src="assets/images/calefont.png" alt="Calefont y Calderas" style="max-height: 140px; object-fit: contain;">
+        <article class="service-card">
+          <div class="service-img-wrap">
+            <img src="assets/images/calefont.webp" alt="Calefont y Calderas" loading="lazy" width="380" height="210">
+            <span class="service-tag">🔥 Multimarca</span>
           </div>
-          <div class="service-card-body">
-            <span class="service-badge" style="background: #fef3c7; color: #b45309;">Multimarca</span>
+          <div class="service-body">
             <h3 class="service-title">Calefont & Calderas</h3>
-            <p class="service-desc">Mantención preventiva, cambio de serpentín, reparación de ionizados, tiro forzado, calderas murales y termos eléctricos.</p>
-            <a href="calefont" class="service-link">Servicio de calefont &raquo;</a>
+            <p class="service-text">Mantención preventiva, cambio de serpentín, reparación de ionizados, tiro forzado, calderas murales y termos eléctricos.</p>
+            <div class="service-footer">
+              <a href="calefont" class="service-link">Servicio Calefont &raquo;</a>
+              <a href="tel:932237072" class="btn btn-danger btn-sm">Llamar 24/7</a>
+            </div>
           </div>
-        </div>
+        </article>
       </div>
     </div>
   </section>
