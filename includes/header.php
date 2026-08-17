@@ -13,8 +13,8 @@
   </noscript>
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/main.css?v=<?php echo file_exists(__DIR__ . '/../assets/css/main.css') ? filemtime(__DIR__ . '/../assets/css/main.css') : '2.2'; ?>">
+  <link rel="stylesheet" href="assets/css/responsive.css?v=<?php echo file_exists(__DIR__ . '/../assets/css/responsive.css') ? filemtime(__DIR__ . '/../assets/css/responsive.css') : '2.2'; ?>">
   <link rel="icon" type="image/webp" href="assets/images/logo.webp">
 </head>
 <body>
