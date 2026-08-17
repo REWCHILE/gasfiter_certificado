@@ -22,6 +22,7 @@
 
   # Internal rewrite: If exact filename.php exists, rewrite /filename to filename.php
   RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME}.php -f [OR]
   RewriteCond %{DOCUMENT_ROOT}/$1.php -f
   RewriteRule ^([^/]+)/?$ $1.php [L,QSA]
 
