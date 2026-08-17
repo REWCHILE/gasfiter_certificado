@@ -153,25 +153,52 @@ include_once __DIR__ . '/includes/header.php';
 
       <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
         <div class="trust-sec-card">
-          <div class="trust-sec-icon">⚡</div>
-          <h3>Llegada en 30 a 45 Min</h3>
+          <div class="trust-sec-icon icon-red">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+              <path d="M19 5 L22 2" stroke-width="2"></path>
+            </svg>
+          </div>
+          <h3>Respuesta en 30 a 45 Min</h3>
           <p>Móviles patrullando las comunas de Santiago para atender urgencias domiciliarias y comerciales sin demoras.</p>
         </div>
 
         <div class="trust-sec-card">
-          <div class="trust-sec-icon">📜</div>
+          <div class="trust-sec-icon icon-green">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <polyline points="9 12 11 14 15 10"></polyline>
+            </svg>
+          </div>
           <h3>Carnet Oficial SEC</h3>
           <p>Instaladores autorizados Clase 1, 2 y 3. Emitimos declaraciones oficiales TC6, pruebas de hermeticidad y Sello Verde.</p>
         </div>
 
         <div class="trust-sec-card">
-          <div class="trust-sec-icon">🔬</div>
+          <div class="trust-sec-icon icon-indigo">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <line x1="12" y1="2" x2="12" y2="22"></line>
+              <circle cx="12" cy="12" r="4" stroke-width="2"></circle>
+              <circle cx="12" cy="12" r="1" fill="currentColor"></circle>
+            </svg>
+          </div>
           <h3>Tecnología No Invasiva</h3>
           <p>Detección ultrasónica, gas trazador y sellado alemán Prodoral R6-1 para reparar cañerías sin romper muros ni pisos.</p>
         </div>
 
         <div class="trust-sec-card">
-          <div class="trust-sec-icon">🛡️</div>
+          <div class="trust-sec-icon icon-blue">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+          </div>
           <h3>Garantía por Escrito</h3>
           <p>Todos nuestros trabajos cuentan con boleta o factura formal y garantía extendida por escrito de hasta 6 meses.</p>
         </div>
@@ -280,17 +307,21 @@ include_once __DIR__ . '/includes/header.php';
   <?php endif; ?>
 
   <!-- Emergency Banner CTA -->
-  <section class="cta-urgent-banner" style="background: linear-gradient(135deg, var(--navy-900), var(--navy-800)); color: #ffffff; padding: 4rem 0; text-align: center; border-top: 1px solid rgba(255,255,255,0.1);">
-    <div class="container" style="max-width: 800px;">
-      <span class="hero-badge-live" style="margin-bottom: 1.5rem;">Atención Continua 24 Horas</span>
-      <h2 style="font-size: 2.3rem; margin-bottom: 1rem; color: #ffffff;">¿Necesitas Asistencia Técnica Inmediata?</h2>
-      <p style="font-size: 1.1rem; color: #cbd5e1; margin-bottom: 2rem;">Llámanos directamente o escríbenos por WhatsApp. Un instalador certificado SEC acudirá a tu domicilio en 30 a 45 minutos.</p>
-      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-        <a href="tel:932237072" class="btn btn-danger btn-lg" style="font-size: 1.1rem; padding: 1rem 2rem;">
+  <section class="cta-urgent-banner" aria-labelledby="cta-urgent-title">
+    <div class="container">
+      <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(255, 255, 255, 0.12); border: 1px solid rgba(255, 255, 255, 0.25); padding: 0.4rem 1.25rem; border-radius: var(--radius-full); font-size: 0.85rem; font-weight: 700; margin-bottom: 1.5rem; backdrop-filter: blur(8px);">
+        <span style="width: 9px; height: 9px; border-radius: 50%; background: #22c55e; display: inline-block; box-shadow: 0 0 10px #22c55e;"></span>
+        Atención Continua 24 Horas en Toda la Región Metropolitana
+      </div>
+      <h2 id="cta-urgent-title">¿Necesitas Asistencia Técnica Inmediata?</h2>
+      <p>Llámanos directamente o escríbenos por WhatsApp. Un instalador certificado SEC acudirá a tu domicilio con un tiempo de respuesta estimado de 30 a 45 minutos.</p>
+      <div class="cta-banner-buttons">
+        <a href="tel:932237072" class="btn btn-danger btn-lg" style="font-size: 1.1rem; padding: 1.05rem 2.25rem;">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
           Llamar al 9 3223 7072
         </a>
-        <a href="https://wa.me/56932237072?text=<?php echo rawurlencode($route['whatsapp_msg']); ?>" target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg" style="font-size: 1.1rem; padding: 1rem 2rem;">
+        <a href="https://wa.me/56932237072?text=<?php echo rawurlencode($route['whatsapp_msg']); ?>" target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg" style="font-size: 1.1rem; padding: 1.05rem 2.25rem;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.046.419-.098.824z"/></svg>
           Chatear por WhatsApp
         </a>
       </div>
