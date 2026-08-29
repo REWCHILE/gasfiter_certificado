@@ -666,15 +666,15 @@ button, input, select, textarea {
 }
 
 .btn-whatsapp {
-  background: #25d366;
+  background: #15803d;
   color: #ffffff;
-  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
+  box-shadow: 0 4px 14px rgba(21, 128, 61, 0.35);
 }
 
 .btn-whatsapp:hover {
-  background: #1eb956;
+  background: #166534;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+  box-shadow: 0 6px 20px rgba(21, 128, 61, 0.5);
   color: #ffffff;
 }
 
@@ -756,7 +756,7 @@ button, input, select, textarea {
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
   gap: 3rem;
-  align-items: center;
+  align-items: start;
   position: relative;
   z-index: 2;
 }
@@ -774,6 +774,8 @@ button, input, select, textarea {
   font-weight: 700;
   color: #6ee7b7;
   margin-bottom: 1.5rem;
+  height: 36px;
+  box-sizing: border-box;
 }
 
 .hero-title {

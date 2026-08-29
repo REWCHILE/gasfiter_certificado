@@ -51,10 +51,10 @@ def optimize_image_from_source(webp_name, source_name=None, max_width=None, max_
 
 print("Starting Advanced WebP Image Optimization...")
 
-# 1. Logo
-optimize_image_from_source("logo.webp", source_name="logo.jpg", max_width=100, max_height=100, quality=75)
-optimize_image_from_source("logotipo-2.webp", source_name="logo.jpg", max_width=100, max_height=100, quality=75)
-optimize_image_from_source("logotipo-gasfiter-certificado.webp", source_name="logo.jpg", max_width=100, max_height=100, quality=75)
+# 1. Logo (Exact 2x retina for 48x48 display)
+optimize_image_from_source("logo.webp", source_name="logo.jpg", max_width=96, max_height=96, quality=75)
+optimize_image_from_source("logotipo-2.webp", source_name="logo.jpg", max_width=96, max_height=96, quality=75)
+optimize_image_from_source("logotipo-gasfiter-certificado.webp", source_name="logo.jpg", max_width=96, max_height=96, quality=75)
 
 # 2. Service Cards (Target ~7-10 KiB each at crystal clear quality 65)
 optimize_image_from_source("fuga-gas.webp", source_name="fuga-gas.png", max_width=480, max_height=270, quality=65)
