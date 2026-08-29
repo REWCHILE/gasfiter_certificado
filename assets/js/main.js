@@ -4,12 +4,10 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  initStickyHeader();
-  initMobileDrawer();
-
-  // Defer non-critical bindings until browser idle
-  const idleInit = window.requestIdleCallback || ((cb) => setTimeout(cb, 100));
+  const idleInit = window.requestIdleCallback || ((cb) => setTimeout(cb, 50));
   idleInit(() => {
+    initStickyHeader();
+    initMobileDrawer();
     initFaqAccordion();
     initComunasFilter();
     initLiveSocialToasts();
