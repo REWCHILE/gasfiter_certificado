@@ -15,7 +15,15 @@ if ($raw_slug === '' || $raw_slug === 'home') {
     exit;
 }
 
-$route = get_seo_route($raw_slug);
+$canonical_slug = get_canonical_slug($raw_slug);
+
+// If user or bot requests an old/duplicate slug (e.g. gasfiter-certificado-2), 301 redirect to the friendly URL
+if ($raw_slug !== $canonical_slug) {
+    header("Location: /" . $canonical_slug, true, 301);
+    exit;
+}
+
+$route = get_seo_route($canonical_slug);
 
 if (!$route) {
     // Graceful fallback to index with 404 or redirect
@@ -27,7 +35,7 @@ if (!$route) {
 $page_title = $route['title'];
 $page_description = $route['description'];
 $page_type = "website";
-$canonical_url = "https://gasfiter-certificado.cl/" . htmlspecialchars($raw_slug);
+$canonical_url = "https://gasfiter-certificado.cl/" . htmlspecialchars($canonical_slug);
 $og_image = !empty($route['og_image']) ? $route['og_image'] : "https://gasfiter-certificado.cl/assets/images/og-share-gasfiter.jpg";
 
 // Additional FAQ Schema JSON-LD if FAQs exist
