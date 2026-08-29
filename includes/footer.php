@@ -90,6 +90,8 @@
 
   <!-- Scripts (Deferred for Performance) -->
   <script src="assets/js/main.js" defer></script>
+  <?php if (in_array(basename($_SERVER['PHP_SELF']), ['index.php', 'cotizar.php'])): ?>
   <script src="assets/js/calculator.js" defer></script>
+  <?php endif; ?>
 </body>
 </html>

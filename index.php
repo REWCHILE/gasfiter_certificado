@@ -147,32 +147,32 @@ include_once __DIR__ . '/includes/header.php';
         <div class="stat-item">
           <div class="stat-icon-wrap">🛡️</div>
           <div class="stat-content">
-            <div style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800; color: #ffffff;">+40 Años</div>
-            <p>De Trayectoria en Especialidades de Gasfitería</p>
+            <div style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800; color: var(--primary-navy);">+40 Años</div>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0;">De Trayectoria en Especialidades</p>
           </div>
         </div>
 
         <div class="stat-item">
           <div class="stat-icon-wrap">⏱️</div>
           <div class="stat-content">
-            <div style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800; color: #ffffff;">45 Min</div>
-            <p>Tiempo Promedio de Respuesta RM</p>
+            <div style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800; color: var(--primary-navy);">45 Min</div>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0;">Tiempo Promedio de Respuesta</p>
           </div>
         </div>
 
         <div class="stat-item">
           <div class="stat-icon-wrap">⭐</div>
           <div class="stat-content">
-            <div style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800; color: #ffffff;">+40.000</div>
-            <p>Servicios Realizados con Éxito</p>
+            <div style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800; color: var(--primary-navy);">+40.000</div>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0;">Servicios Realizados con Éxito</p>
           </div>
         </div>
 
         <div class="stat-item">
           <div class="stat-icon-wrap">📝</div>
           <div class="stat-content">
-            <div style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800; color: #ffffff;">100% SEC</div>
-            <p>Garantía por Escrito y Boleta</p>
+            <div style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800; color: var(--primary-navy);">100% SEC</div>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0;">Garantía por Escrito y Boleta</p>
           </div>
         </div>
       </div>

@@ -6,10 +6,15 @@
 document.addEventListener('DOMContentLoaded', () => {
   initStickyHeader();
   initMobileDrawer();
-  initFaqAccordion();
-  initComunasFilter();
-  initLiveSocialToasts();
-  initContactForms();
+
+  // Defer non-critical bindings until browser idle
+  const idleInit = window.requestIdleCallback || ((cb) => setTimeout(cb, 100));
+  idleInit(() => {
+    initFaqAccordion();
+    initComunasFilter();
+    initLiveSocialToasts();
+    initContactForms();
+  });
 });
 
 /* Sticky Header on Scroll (Optimized with requestAnimationFrame & passive listener) */

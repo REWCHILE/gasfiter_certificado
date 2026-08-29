@@ -33,14 +33,17 @@ if (!isset($hero_preload_image)) {
   <!-- Preload High-Priority LCP Hero Image -->
   <link rel="preload" as="image" href="<?php echo htmlspecialchars($hero_preload_image); ?>" fetchpriority="high">
 
-  <!-- Preconnect & High-Performance Web Fonts -->
+  <!-- Preconnect & Non-Blocking Google Web Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap">
+  </noscript>
 
-  <!-- Consolidated High-Performance Stylesheet -->
-  <link rel="stylesheet" href="assets/css/main.css?v=<?php echo file_exists(__DIR__ . '/../assets/css/main.css') ? filemtime(__DIR__ . '/../assets/css/main.css') : '2.3'; ?>">
+  <!-- Consolidated Minified High-Performance Stylesheet -->
+  <link rel="stylesheet" href="assets/css/main.min.css?v=<?php echo file_exists(__DIR__ . '/../assets/css/main.min.css') ? filemtime(__DIR__ . '/../assets/css/main.min.css') : '2.4'; ?>">
   <link rel="icon" type="image/webp" href="assets/images/logo.webp">
 </head>
 <body>

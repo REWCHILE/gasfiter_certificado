@@ -455,7 +455,7 @@ button, input, select, textarea {
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
-  background: var(--whatsapp-green);
+  background: #0f766e;
   color: #ffffff;
   font-family: var(--font-heading);
   font-weight: 700;
@@ -467,7 +467,7 @@ button, input, select, textarea {
 }
 
 .btn-header-whatsapp:hover {
-  background: var(--whatsapp-dark);
+  background: #115e59;
   transform: translateY(-1px);
   color: #ffffff;
 }
@@ -1266,7 +1266,8 @@ button, input, select, textarea {
 }
 
 .service-tag.green {
-  background: var(--sec-green);
+  background: #0f766e;
+  color: #ffffff;
 }
 
 .service-body {
@@ -2086,9 +2087,10 @@ button, input, select, textarea {
 .footer-brand p {
   line-height: 1.6;
   margin-bottom: 1.5rem;
-  color: #94a3b8;
+  color: #cbd5e1;
 }
 
+.footer-col h3,
 .footer-col h4 {
   font-family: var(--font-heading);
   font-size: 1.1rem;
@@ -2099,6 +2101,7 @@ button, input, select, textarea {
   padding-bottom: 0.5rem;
 }
 
+.footer-col h3::after,
 .footer-col h4::after {
   content: '';
   position: absolute;
@@ -2117,7 +2120,7 @@ button, input, select, textarea {
 }
 
 .footer-links a {
-  color: #94a3b8;
+  color: #cbd5e1;
   transition: color var(--transition-fast);
 }
 
@@ -2140,8 +2143,12 @@ button, input, select, textarea {
   color: #cbd5e1;
 }
 
+.footer-contact-item strong {
+  color: #ffffff;
+}
+
 .footer-contact-item svg {
-  color: var(--safety-red);
+  color: #f87171;
   flex-shrink: 0;
   margin-top: 3px;
 }
@@ -2154,8 +2161,12 @@ button, input, select, textarea {
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
-  font-size: 0.825rem;
-  color: #64748b;
+  font-size: 0.85rem;
+  color: #cbd5e1;
+}
+
+.footer-bottom strong {
+  color: #ffffff;
 }
 
 /* ==========================================================================
@@ -2279,9 +2290,9 @@ button, input, select, textarea {
 }
 
 .toast-time {
-  font-size: 0.7rem;
-  color: var(--text-light);
-  font-weight: 600;
+  font-size: 0.75rem;
+  color: #334155;
+  font-weight: 700;
 }
 
 /* ==========================================================================
