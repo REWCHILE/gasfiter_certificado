@@ -17,7 +17,7 @@
 
         <!-- Col 2: Servicios SEO -->
         <div class="footer-col">
-          <h4>Servicios SEC</h4>
+          <h3>Servicios SEC</h3>
           <ul class="footer-links">
             <li><a href="fuga-de-gas">Detección de Fugas de Gas 24/7</a></li>
             <li><a href="prodoral">Sellado con Prodoral R6-1 (Sin Picar)</a></li>
@@ -30,7 +30,7 @@
 
         <!-- Col 3: Cobertura Comunas -->
         <div class="footer-col">
-          <h4>Cobertura Santiago</h4>
+          <h3>Cobertura Santiago</h3>
           <ul class="footer-links">
             <li><a href="cobertura">Gásfiter Las Condes</a></li>
             <li><a href="cobertura">Gásfiter Providencia</a></li>
@@ -45,7 +45,7 @@
 
         <!-- Col 4: Contacto Inmediato -->
         <div class="footer-col">
-          <h4>Central de Atención</h4>
+          <h3>Central de Atención</h3>
           <ul class="footer-contact-items">
             <li class="footer-contact-item">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>

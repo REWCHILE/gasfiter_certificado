@@ -131,7 +131,7 @@ include_once __DIR__ . '/includes/header.php';
             <button type="submit" class="btn btn-danger" style="width: 100%; font-size: 1rem; padding: 0.9rem;">
               <span>Solicitar Técnico SEC Ahora &raquo;</span>
             </button>
-            <div style="font-size: 0.72rem; color: var(--text-light); text-align: center; margin-top: 0.5rem;">
+            <div style="font-size: 0.78rem; color: #475569; text-align: center; margin-top: 0.5rem; font-weight: 500;">
               🔒 Tus datos son confidenciales y solo para la atención técnica.
             </div>
           </form>
@@ -192,7 +192,7 @@ include_once __DIR__ . '/includes/header.php';
         <!-- Service 1: Fuga de Gas -->
         <article class="service-card">
           <div class="service-img-wrap">
-            <img src="assets/images/fuga-gas.webp" alt="Detección Electrónica de Fugas de Gas" loading="lazy" width="380" height="210">
+            <img src="assets/images/fuga-gas.webp" alt="Detección Electrónica de Fugas de Gas" loading="lazy" decoding="async" width="380" height="214">
             <span class="service-tag urgent">🚨 Emergencia 24/7</span>
           </div>
           <div class="service-body">
@@ -222,7 +222,7 @@ include_once __DIR__ . '/includes/header.php';
         <!-- Service 2: Prodoral Sealing -->
         <article class="service-card">
           <div class="service-img-wrap">
-            <img src="assets/images/prodoral.webp" alt="Sellado de Fugas con Prodoral R6-1 sin picar" loading="lazy" width="380" height="210">
+            <img src="assets/images/prodoral.webp" alt="Sellado de Fugas con Prodoral R6-1 sin picar" loading="lazy" decoding="async" width="380" height="214">
             <span class="service-tag">🧪 Innovación Exclusiva</span>
           </div>
           <div class="service-body">
@@ -252,7 +252,7 @@ include_once __DIR__ . '/includes/header.php';
         <!-- Service 3: Sello Verde SEC -->
         <article class="service-card">
           <div class="service-img-wrap">
-            <img src="assets/images/hero-sec.webp" alt="Certificación Sello Verde SEC e Inspecciones" loading="lazy" width="380" height="210">
+            <img src="assets/images/hero-sec.webp" alt="Certificación Sello Verde SEC e Inspecciones" loading="lazy" decoding="async" width="380" height="214">
             <span class="service-tag green">🛡️ Trámite Oficial SEC</span>
           </div>
           <div class="service-body">
@@ -282,7 +282,7 @@ include_once __DIR__ . '/includes/header.php';
         <!-- Service 4: Calefont -->
         <article class="service-card">
           <div class="service-img-wrap">
-            <img src="assets/images/calefont.webp" alt="Mantención y Reparación de Calefont Multimarca" loading="lazy" width="380" height="210">
+            <img src="assets/images/calefont.webp" alt="Mantención y Reparación de Calefont Multimarca" loading="lazy" decoding="async" width="380" height="214">
             <span class="service-tag">⚡ Todas las Marcas</span>
           </div>
           <div class="service-body">
@@ -312,7 +312,7 @@ include_once __DIR__ . '/includes/header.php';
         <!-- Service 5: Destapes -->
         <article class="service-card">
           <div class="service-img-wrap">
-            <img src="assets/images/hero-destapes.webp" alt="Destape de Cañerías y Alcantarillado" loading="lazy" width="380" height="210">
+            <img src="assets/images/hero-destapes.webp" alt="Destape de Cañerías y Alcantarillado" loading="lazy" decoding="async" width="380" height="214">
             <span class="service-tag urgent">⚡ Máquinas Eléctricas</span>
           </div>
           <div class="service-body">
@@ -342,7 +342,7 @@ include_once __DIR__ . '/includes/header.php';
         <!-- Service 6: Fugas de Agua & Gasfitería General -->
         <article class="service-card">
           <div class="service-img-wrap">
-            <img src="assets/images/hero-gasfiter.webp" alt="Detección de Fugas de Agua y Plomería a Domicilio" loading="lazy" width="380" height="210">
+            <img src="assets/images/hero-gasfiter.webp" alt="Detección de Fugas de Agua y Plomería a Domicilio" loading="lazy" decoding="async" width="380" height="214">
             <span class="service-tag">💧 Fugas de Agua & Plomería</span>
           </div>
           <div class="service-body">
@@ -377,7 +377,7 @@ include_once __DIR__ . '/includes/header.php';
     <div class="container">
       <div class="feature-grid">
         <div class="feature-image-card">
-          <img src="assets/images/prodoral.webp" alt="Máquina de Sellado Prodoral R6-1 en Cañerías de Gas" loading="lazy" width="580" height="400">
+          <img src="assets/images/prodoral.webp" alt="Máquina de Sellado Prodoral R6-1 en Cañerías de Gas" loading="lazy" decoding="async" width="580" height="380">
         </div>
         <div class="feature-content">
           <span class="section-subtitle gold">Tecnología Alemana Exclusiva</span>
@@ -631,7 +631,7 @@ include_once __DIR__ . '/includes/header.php';
       <!-- Verified SEC Installer & QR Showcase Card -->
       <div class="sec-installer-showcase">
         <div class="installer-avatar-wrap">
-          <img src="assets/images/domingo-isain-caamano-gasfiter-sec.webp" alt="Domingo Isaín Caamaño - Instalador Certificado SEC" class="installer-avatar-img" width="140" height="140">
+          <img src="assets/images/domingo-isain-caamano-gasfiter-sec.webp" alt="Domingo Isaín Caamaño - Instalador Certificado SEC" class="installer-avatar-img" loading="lazy" decoding="async" width="140" height="140">
           <span class="installer-sec-badge">AUTORIZADO SEC</span>
         </div>
 
@@ -653,7 +653,7 @@ include_once __DIR__ . '/includes/header.php';
         </div>
 
         <div class="qr-verification-box">
-          <img src="assets/images/qr-sec.webp" alt="Código QR Verificación Oficial SEC" class="qr-verification-img" width="130" height="130">
+          <img src="assets/images/qr-sec.webp" alt="Código QR Verificación Oficial SEC" class="qr-verification-img" loading="lazy" decoding="async" width="130" height="130">
           <div class="qr-verification-label">Escanea con tu Celular</div>
           <div class="qr-verification-sub">Valida registro oficial en la SEC</div>
         </div>

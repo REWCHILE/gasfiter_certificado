@@ -12,18 +12,25 @@ document.addEventListener('DOMContentLoaded', () => {
   initContactForms();
 });
 
-/* Sticky Header on Scroll */
+/* Sticky Header on Scroll (Optimized with requestAnimationFrame & passive listener) */
 function initStickyHeader() {
   const header = document.querySelector('.header-main');
   if (!header) return;
 
+  let ticking = false;
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 40) {
-      header.classList.add('header-scrolled');
-    } else {
-      header.classList.remove('header-scrolled');
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        if (window.scrollY > 40) {
+          header.classList.add('header-scrolled');
+        } else {
+          header.classList.remove('header-scrolled');
+        }
+        ticking = false;
+      });
+      ticking = true;
     }
-  });
+  }, { passive: true });
 }
 
 /* Mobile Drawer Menu */
@@ -116,7 +123,7 @@ function initComunasFilter() {
   });
 }
 
-/* Social Proof Live Activity Toasts */
+/* Social Proof Live Activity Toasts (Deferred & Non-blocking) */
 function initLiveSocialToasts() {
   const toastContainer = document.querySelector('.social-toast-container');
   if (!toastContainer) return;
@@ -149,27 +156,29 @@ function initLiveSocialToasts() {
     toastContainer.innerHTML = '';
     toastContainer.appendChild(toast);
 
-    // Trigger animation in
-    setTimeout(() => {
-      toast.classList.add('show');
-    }, 100);
+    // Trigger animation via double RAF
+    window.requestAnimationFrame(() => {
+      window.requestAnimationFrame(() => {
+        toast.classList.add('show');
+      });
+    });
 
     // Hide after 5.5s
     setTimeout(() => {
       toast.classList.remove('show');
       setTimeout(() => {
         toast.remove();
-      }, 600);
+      }, 500);
     }, 5500);
 
     currentIndex = (currentIndex + 1) % activities.length;
   }
 
-  // Initial delay 4s, then loop every 12s
+  // Defer initial toast to 6s (after initial load and first user interaction)
   setTimeout(() => {
     showNextToast();
-    setInterval(showNextToast, 12000);
-  }, 4000);
+    setInterval(showNextToast, 14000);
+  }, 6000);
 }
 
 /* AJAX Contact Forms with Instant WhatsApp option */

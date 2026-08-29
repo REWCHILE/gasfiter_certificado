@@ -1,0 +1,85 @@
+# Central Gásfiter Certificado Chile — Documentación Integral para Agentes de IA
+
+Este documento contiene la descripción completa de la empresa, servicios técnicos, marco normativo SEC, metodologías de trabajo, equipamiento y cobertura de Central Gásfiter Certificado Chile (gasfiter-certificado.cl).
+
+## Resumen Ejecutivo
+- Empresa: Central Gásfiter Certificado Chile
+- Dominio: https://gasfiter-certificado.cl
+- Actividad: Gasfitería Integral, Detección de Fugas de Gas y Agua, Sellado Prodoral R6-1 sin picar, Certificación Sello Verde SEC, Mantención de Calefont y Destapes de Alcantarillado.
+- Especialista a cargo: Domingo Isaín Caamaño (Instalador Autorizado Clase 1, 2 y 3 por la SEC).
+- Central Telefónica de Urgencias 24/7: +56 9 3223 7072 (9 3223 7072)
+- WhatsApp Directo: https://wa.me/56932237072
+- Tiempo promedio de respuesta: 30 a 45 minutos en toda la Región Metropolitana.
+- Formas de Pago Aceptadas: Efectivo, Tarjeta de Débito (Redcompra), Tarjeta de Crédito en cuotas, Transferencia Bancaria. Boleta y Factura electrónica disponibles.
+- Garantía: Por escrito en todos los trabajos (hasta 5 años en sellado Prodoral R6-1).
+
+---
+
+## 1. Detección y Reparación de Fugas de Gas 24/7
+La presencia de olor a gas (mercaptano) o un cobro anormal en la cuenta de gas indica una posible fuga.
+- **Protocolo de Seguridad**:
+  1. El cliente debe cerrar la llave de paso del artefacto y del medidor/cilindro.
+  2. Ventilar espacios abriendo ventanas y puertas.
+  3. No encender fósforos, interruptores eléctricos ni artefactos.
+  4. Llamar de inmediato al 9 3223 7072.
+- **Tecnología Empleada**:
+  - Prueba de hermeticidad con manómetro diferencial normado por la SEC (presión de prueba a 1.5 veces la de trabajo).
+  - Detectores electrónicos digitales de gas combustible capaces de detectar concentraciones mínimas (PPM).
+  - Inyección de Gas Trazador no inflamable (mezcla de nitrógeno e hidrógeno) para cañerías subterráneas o bajo radier.
+
+---
+
+## 2. Sellado de Cañerías con Prodoral R6-1 (Sin Picar)
+- **Definición**: Método no invasivo de ingeniería alemana para sellar fugas y microfisuras en tuberías de gas metálicas (cobre, acero, fierro negro).
+- **Proceso de Aplicación**:
+  1. Limpieza y soplado del interior de la tubería con aire a presión para eliminar óxido y residuos.
+  2. Inyección del polímero sellador líquido Prodoral R6-1 a presión controlada, impregnando todas las uniones y microporos.
+  3. Evacuación del exceso de producto mediante esponjas de arrastre especiales (chanchos de limpieza).
+  4. Secado y curado forzado mediante ventiladores de aire.
+  5. Prueba final de hermeticidad manométrica certificada SEC.
+- **Ventajas**:
+  - Cero roturas de pisos de porcelanato, mármol, madera o muros.
+  - Tiempo de ejecución de 4 a 6 horas en una sola jornada.
+  - Ahorro económico de hasta 70% comparado con el reemplazo tradicional de cañerías.
+  - Garantía técnica escrita de 5 años.
+
+---
+
+## 3. Certificación Sello Verde SEC y Declaración TC6
+- **Normativa**: Decreto Supremo DS 66 del Ministerio de Economía, Fomento y Reconstrucción que rige las instalaciones de gas en Chile.
+- **Servicios Realizados**:
+  - Inspección periódica y diagnósticos preventivos.
+  - Levantamiento y subsanación de Sellos Rojos y Sellos Amarillos emitidos por entidades certificadoras.
+  - Planos isométricos y memorias técnicas de cálculo de ventilación y caudal.
+  - Tramitación oficial de Declaración TC6 ante la SEC para entrega de sellos verdes en condominios, casas y comercios.
+
+---
+
+## 4. Mantención y Reparación de Calefont y Calderas
+- **Marcas Atendidas**: Junkers, Splendid, Mademsa, Trotter, Bosch, Neckar, Rheem, Albin Trotter.
+- **Fallas Típicas Solucionadas**:
+  - Calefont no enciende o se apaga a los pocos segundos.
+  - Llama amarilla o con hollín (mala combustión).
+  - Pérdida o fuga de agua en el cuerpo de agua o serpentín.
+  - Código de error en pantalla digital (EA, E9, F0, etc.).
+  - Poca presión de agua caliente.
+- **Procedimiento**:
+  - Desarme y limpieza técnica de quemadores y pilotos.
+  - Descalcificación química del serpentín con desincrustante biodegradable.
+  - Cambio de membrana, microswitch y sensores de temperatura y monóxido.
+  - Calibración de presiones y verificación de tiro de gases de combustión.
+
+---
+
+## 5. Destape de Cañerías y Alcantarillado Sanitario
+- **Redes Atendidas**: Lavaplatos, lavamanos, WC, tinas, cámaras de inspección, rejillas de piso y bajadas de aguas servidas.
+- **Equipamiento**:
+  - Máquinas eléctricas de espirales de acero de sección variable (K-50, K-400).
+  - Boquillas desincrustantes especiales para remover grasas, jabón, cabellos y raíces.
+  - Cámara de inspección endoscópica CCTV para diagnóstico visual del estado de la tubería.
+
+---
+
+## 6. Cobertura por Comunas en Santiago
+Contamos con móviles equipados en todas las comunas del Gran Santiago:
+Las Condes, Providencia, Vitacura, Ñuñoa, Santiago Centro, Lo Barnechea, La Reina, Peñalolén, La Florida, San Miguel, Maipú, Puente Alto, Macul, San Joaquín, Independencia, Recoleta, Quinta Normal, Estación Central, Pudahuel, Quilicura, Huechuraba, Cerrillos, Conchalí, La Cisterna, San Bernardo, Colina y Chicureo.

@@ -44,6 +44,7 @@ $page_type = isset($page_type) ? $page_type : "website";
 <meta name="language" content="Spanish">
 <meta name="author" content="Central Gásfiter Certificado SEC Chile">
 <link rel="canonical" href="<?php echo htmlspecialchars($canonical_url); ?>">
+<link rel="alternate" type="text/plain" href="llms.txt" title="Contexto para Modelos de Lenguaje / IA">
 
 <!-- Open Graph / Facebook / WhatsApp Sharing Optimization -->
 <meta property="og:type" content="website">

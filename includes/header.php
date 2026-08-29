@@ -1,20 +1,46 @@
+<?php
+// Compute hero image preload for LCP optimization
+$current_script = basename($_SERVER['PHP_SELF']);
+if (!isset($hero_preload_image)) {
+    switch ($current_script) {
+        case 'fuga-de-gas.php':
+            $hero_preload_image = 'assets/images/hero-fuga-gas.webp';
+            break;
+        case 'prodoral.php':
+            $hero_preload_image = 'assets/images/hero-prodoral.webp';
+            break;
+        case 'gasfiter-sec.php':
+            $hero_preload_image = 'assets/images/hero-sec.webp';
+            break;
+        case 'calefont.php':
+            $hero_preload_image = 'assets/images/hero-calefont.webp';
+            break;
+        case 'destape-alcantarillado.php':
+            $hero_preload_image = 'assets/images/hero-destapes.webp';
+            break;
+        default:
+            $hero_preload_image = 'assets/images/hero-home-main.webp';
+            break;
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="es-CL">
 <head>
   <base href="/">
   <?php include_once __DIR__ . '/seo-meta.php'; ?>
   
-  <!-- Preconnect & Optimized Fonts for Google PageSpeed -->
+  <!-- Preload High-Priority LCP Hero Image -->
+  <link rel="preload" as="image" href="<?php echo htmlspecialchars($hero_preload_image); ?>" fetchpriority="high">
+
+  <!-- Preconnect & High-Performance Web Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" media="print" onload="this.media='all'">
-  <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap">
-  </noscript>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap">
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="assets/css/main.css?v=<?php echo file_exists(__DIR__ . '/../assets/css/main.css') ? filemtime(__DIR__ . '/../assets/css/main.css') : '2.2'; ?>">
-  <link rel="stylesheet" href="assets/css/responsive.css?v=<?php echo file_exists(__DIR__ . '/../assets/css/responsive.css') ? filemtime(__DIR__ . '/../assets/css/responsive.css') : '2.2'; ?>">
+  <!-- Consolidated High-Performance Stylesheet -->
+  <link rel="stylesheet" href="assets/css/main.css?v=<?php echo file_exists(__DIR__ . '/../assets/css/main.css') ? filemtime(__DIR__ . '/../assets/css/main.css') : '2.3'; ?>">
   <link rel="icon" type="image/webp" href="assets/images/logo.webp">
 </head>
 <body>
