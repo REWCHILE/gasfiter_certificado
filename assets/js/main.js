@@ -4,36 +4,42 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  const idleInit = window.requestIdleCallback || ((cb) => setTimeout(cb, 50));
+  initStickyHeader();
+  initMobileDrawer();
+  initContactForms();
+
+  // Defer secondary non-critical widgets to idle
+  const idleInit = window.requestIdleCallback || ((cb) => setTimeout(cb, 120));
   idleInit(() => {
-    initStickyHeader();
-    initMobileDrawer();
     initFaqAccordion();
     initComunasFilter();
     initLiveSocialToasts();
-    initContactForms();
   });
 });
 
-/* Sticky Header on Scroll (Optimized with requestAnimationFrame & passive listener) */
+/* Sticky Header on Scroll (Zero Reflow using IntersectionObserver) */
 function initStickyHeader() {
   const header = document.querySelector('.header-main');
   if (!header) return;
 
-  let ticking = false;
-  window.addEventListener('scroll', () => {
-    if (!ticking) {
-      window.requestAnimationFrame(() => {
-        if (window.scrollY > 40) {
-          header.classList.add('header-scrolled');
-        } else {
-          header.classList.remove('header-scrolled');
-        }
-        ticking = false;
-      });
-      ticking = true;
-    }
-  }, { passive: true });
+  const topbar = document.querySelector('.topbar-emergency');
+  if (topbar && 'IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(([entry]) => {
+      header.classList.toggle('header-scrolled', !entry.isIntersecting);
+    }, { rootMargin: '0px', threshold: 0 });
+    observer.observe(topbar);
+  } else {
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          header.classList.toggle('header-scrolled', window.pageYOffset > 40);
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }, { passive: true });
+  }
 }
 
 /* Mobile Drawer Menu */
@@ -156,15 +162,10 @@ function initLiveSocialToasts() {
       </div>
     `;
 
-    toastContainer.innerHTML = '';
-    toastContainer.appendChild(toast);
+    toastContainer.replaceChildren(toast);
 
-    // Trigger animation via double RAF
-    window.requestAnimationFrame(() => {
-      window.requestAnimationFrame(() => {
-        toast.classList.add('show');
-      });
-    });
+    // Trigger animation smoothly without double RAF or layout thrashing
+    setTimeout(() => toast.classList.add('show'), 60);
 
     // Hide after 5.5s
     setTimeout(() => {
@@ -177,11 +178,21 @@ function initLiveSocialToasts() {
     currentIndex = (currentIndex + 1) % activities.length;
   }
 
-  // Defer initial toast to 6s (after initial load and first user interaction)
-  setTimeout(() => {
-    showNextToast();
-    setInterval(showNextToast, 14000);
-  }, 6000);
+  // Defer initial toast until after user interaction or 15s delay
+  let started = false;
+  function startToasts() {
+    if (started) return;
+    started = true;
+    window.removeEventListener('scroll', startToasts);
+    window.removeEventListener('touchstart', startToasts);
+    setTimeout(() => {
+      showNextToast();
+      setInterval(showNextToast, 14000);
+    }, 4000);
+  }
+  window.addEventListener('scroll', startToasts, { passive: true, once: true });
+  window.addEventListener('touchstart', startToasts, { passive: true, once: true });
+  setTimeout(startToasts, 15000);
 }
 
 /* AJAX Contact Forms with Instant WhatsApp option */

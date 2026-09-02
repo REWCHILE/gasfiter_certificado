@@ -30,20 +30,12 @@ if (!isset($hero_preload_image)) {
   <base href="/">
   <?php include_once __DIR__ . '/seo-meta.php'; ?>
   
-  <!-- Preload High-Priority LCP Hero Image -->
-  <link rel="preload" as="image" href="<?php echo htmlspecialchars($hero_preload_image); ?>" fetchpriority="high">
+  <!-- Preload Critical Local WOFF2 Web Fonts (0ms Third-Party Latency & Fast LCP) -->
+  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/plus-jakarta-sans-latin.woff2" crossorigin fetchpriority="high">
+  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/inter-latin.woff2" crossorigin>
 
-  <!-- Preload Critical WOFF2 Web Fonts to eliminate font-swap CLS -->
-  <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2" crossorigin>
-  <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yygg_vb.woff2" crossorigin>
-
-  <!-- Preconnect to Google Fonts CDN -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" media="print" onload="this.media='all'">
-  <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap">
-  </noscript>
+  <!-- Preload Hero Background Image -->
+  <link rel="preload" as="image" href="<?php echo htmlspecialchars($hero_preload_image); ?>">
 
   <!-- Inlined Minified Stylesheet (0ms Render Blocking) -->
   <style><?php include __DIR__ . '/../assets/css/main.min.css'; ?></style>

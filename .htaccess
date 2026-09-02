@@ -8,9 +8,12 @@
   RewriteEngine On
   RewriteBase /
 
-  # 1.1 Force HTTPS on all connections
+  # 1.1 Force HTTPS on all connections (except local development)
   RewriteCond %{HTTPS} off [OR]
   RewriteCond %{HTTP:X-Forwarded-Proto} =http
+  RewriteCond %{HTTP_HOST} !\.test$ [NC]
+  RewriteCond %{HTTP_HOST} !^localhost [NC]
+  RewriteCond %{HTTP_HOST} !^127\.0\.0\.1 [NC]
   RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
   # 1.2 301 Permanent Redirects for legacy/duplicate slugs to friendly URLs

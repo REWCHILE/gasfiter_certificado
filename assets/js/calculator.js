@@ -5,12 +5,31 @@
  * Step 3: Instant Estimate & WhatsApp Send
  */
 
-document.addEventListener('DOMContentLoaded', () => {
-  initCalculator();
-});
-
-function initCalculator() {
+function setupLazyCalculator() {
   const container = document.querySelector('.calculator-card');
+  if (!container) return;
+
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) {
+        initCalculator(container);
+        observer.disconnect();
+      }
+    }, { rootMargin: '300px 0px' });
+    observer.observe(container);
+  } else {
+    initCalculator(container);
+  }
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', setupLazyCalculator);
+} else {
+  setupLazyCalculator();
+}
+
+function initCalculator(targetContainer) {
+  const container = targetContainer || document.querySelector('.calculator-card');
   if (!container) return;
 
   let currentStep = 1;

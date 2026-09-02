@@ -512,23 +512,21 @@ include_once __DIR__ . '/includes/header.php';
             </h3>
 
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem;">
-              <div class="form-group">
-                <label class="form-label">Tipo de Inmueble:</label>
-                <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 0.5rem;">
-                  <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: 600; cursor: pointer;">
-                    <input type="radio" name="property_type" value="casa" checked> Casa
-                  </label>
-                  <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: 600; cursor: pointer;">
-                    <input type="radio" name="property_type" value="departamento"> Departamento
-                  </label>
-                  <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: 600; cursor: pointer;">
-                    <input type="radio" name="property_type" value="comunidad"> Comunidad / Edificio
-                  </label>
-                  <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: 600; cursor: pointer;">
-                    <input type="radio" name="property_type" value="comercio"> Local Comercial
-                  </label>
-                </div>
-              </div>
+              <fieldset class="form-group" style="border: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.75rem 1rem; align-items: center;">
+                <legend class="form-label" style="width: 100%; margin-bottom: 0.5rem;">Tipo de Inmueble:</legend>
+                <label style="display: inline-flex; align-items: center; gap: 0.4rem; font-weight: 600; cursor: pointer;">
+                  <input type="radio" name="property_type" value="casa" checked> Casa
+                </label>
+                <label style="display: inline-flex; align-items: center; gap: 0.4rem; font-weight: 600; cursor: pointer;">
+                  <input type="radio" name="property_type" value="departamento"> Departamento
+                </label>
+                <label style="display: inline-flex; align-items: center; gap: 0.4rem; font-weight: 600; cursor: pointer;">
+                  <input type="radio" name="property_type" value="comunidad"> Comunidad / Edificio
+                </label>
+                <label style="display: inline-flex; align-items: center; gap: 0.4rem; font-weight: 600; cursor: pointer;">
+                  <input type="radio" name="property_type" value="comercio"> Local Comercial
+                </label>
+              </fieldset>
 
               <div class="form-group">
                 <label class="form-label" for="calc-comuna">Tu Comuna:</label>

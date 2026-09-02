@@ -88,10 +88,10 @@
   <?php include_once __DIR__ . '/floating-buttons.php'; ?>
   <?php include_once __DIR__ . '/toast-activity.php'; ?>
 
-  <!-- Scripts (Deferred for Performance) -->
-  <script src="assets/js/main.js" defer></script>
+  <!-- Scripts (Deferred & Minified for Maximum Performance) -->
+  <script src="assets/js/main.min.js" defer></script>
   <?php if (in_array(basename($_SERVER['PHP_SELF']), ['index.php', 'cotizar.php'])): ?>
-  <script src="assets/js/calculator.js" defer></script>
+  <script src="assets/js/calculator.min.js" defer></script>
   <?php endif; ?>
 </body>
 </html>
