@@ -75,7 +75,7 @@ include_once __DIR__ . '/includes/header.php';
             <p class="hero-card-subtitle">Respuesta en menos de 5 minutos</p>
           </div>
 
-          <form class="ajax-contact-form" method="POST" aria-label="Formulario de Contacto Rápido">
+          <form class="ajax-contact-form" method="POST" action="api/process-contact.php" toolname="solicitar_gasfiter_sec" tooldescription="Solicitar atención técnica urgente 24/7 o cotización de gásfiter certificado SEC en Santiago" aria-label="Formulario de Contacto Rápido">
             <!-- Honeypot anti-spam -->
             <input type="text" name="website_hp" style="display:none;" tabindex="-1" autocomplete="off">
 

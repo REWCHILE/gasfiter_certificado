@@ -129,3 +129,10 @@
 
 # 6. DISABLE DIRECTORY BROWSING
 Options -Indexes
+
+# 7. LLMS.TXT SPECIFICATION & AGENTIC BROWSING HEADERS (CORS + UTF-8)
+<FilesMatch "^(llms|llms-full)\.txt$">
+  ForceType "text/plain; charset=utf-8"
+  Header set Access-Control-Allow-Origin "*"
+  Header set Cache-Control "public, max-age=86400"
+</FilesMatch>

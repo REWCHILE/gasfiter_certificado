@@ -1,85 +1,199 @@
-# Central Gásfiter Certificado Chile — Documentación Integral para Agentes de IA
+# Central Gásfiter Certificado Chile — Especificación Técnica Integral para Agentes de IA y WebMCP
 
-Este documento contiene la descripción completa de la empresa, servicios técnicos, marco normativo SEC, metodologías de trabajo, equipamiento y cobertura de Central Gásfiter Certificado Chile (gasfiter-certificado.cl).
-
-## Resumen Ejecutivo
-- Empresa: Central Gásfiter Certificado Chile
-- Dominio: https://gasfiter-certificado.cl
-- Actividad: Gasfitería Integral, Detección de Fugas de Gas y Agua, Sellado Prodoral R6-1 sin picar, Certificación Sello Verde SEC, Mantención de Calefont y Destapes de Alcantarillado.
-- Especialista a cargo: Domingo Isaín Caamaño (Instalador Autorizado Clase 1, 2 y 3 por la SEC).
-- Central Telefónica de Urgencias 24/7: +56 9 3223 7072 (9 3223 7072)
-- WhatsApp Directo: https://wa.me/56932237072
-- Tiempo promedio de respuesta: 30 a 45 minutos en toda la Región Metropolitana.
-- Formas de Pago Aceptadas: Efectivo, Tarjeta de Débito (Redcompra), Tarjeta de Crédito en cuotas, Transferencia Bancaria. Boleta y Factura electrónica disponibles.
-- Garantía: Por escrito en todos los trabajos (hasta 5 años en sellado Prodoral R6-1).
+Documentación completa y esquemas legibles por máquina conforme a las directrices de Navegación con Agentes (Lighthouse Agentic Browsing Audit) y la especificación /llms.txt.
 
 ---
 
-## 1. Detección y Reparación de Fugas de Gas 24/7
-La presencia de olor a gas (mercaptano) o un cobro anormal en la cuenta de gas indica una posible fuga.
-- **Protocolo de Seguridad**:
-  1. El cliente debe cerrar la llave de paso del artefacto y del medidor/cilindro.
-  2. Ventilar espacios abriendo ventanas y puertas.
-  3. No encender fósforos, interruptores eléctricos ni artefactos.
-  4. Llamar de inmediato al 9 3223 7072.
-- **Tecnología Empleada**:
-  - Prueba de hermeticidad con manómetro diferencial normado por la SEC (presión de prueba a 1.5 veces la de trabajo).
-  - Detectores electrónicos digitales de gas combustible capaces de detectar concentraciones mínimas (PPM).
-  - Inyección de Gas Trazador no inflamable (mezcla de nitrógeno e hidrógeno) para cañerías subterráneas o bajo radier.
+## 1. Identificación y Metadatos de la Entidad
+
+- **Nombre Comercial**: Central Gásfiter Certificado Chile
+- **Sitio Web Oficial**: https://gasfiter-certificado.cl
+- **Ubicación Base**: Santiago, Región Metropolitana, Chile
+- **Marco Regulatorio**: Instalaciones normadas bajo el Decreto Supremo DS 66 del Ministerio de Economía, Fomento y Turismo, fiscalizado por la Superintendencia de Electricidad y Combustibles (SEC).
+- **Instalador Responsable**: Domingo Isaín Caamaño (Instalador Autorizado de Gas Clase 1, 2 y 3 SEC).
+- **Tiempo de Respuesta Promedio (SLA)**: 30 a 45 minutos en toda la Región Metropolitana.
+- **Disponibilidad Operativa**: 24 horas al día, 7 días a la semana (24/7 continuo).
+- **Canal Telefónico de Urgencias**: [+56 9 3223 7072](tel:+56932237072) (9 3223 7072)
+- **WhatsApp Oficial**: https://wa.me/56932237072
+- **Medios de Pago Admitidos**: Efectivo, Transferencia Bancaria Electrónica, Tarjetas de Débito (Redcompra), Tarjetas de Crédito en cuotas. Emisión de boleta o factura electrónica inmediata.
+- **Garantías Técnicas**: Respaldo por escrito en todo servicio (hasta 5 años en sellado interior Prodoral R6-1).
 
 ---
 
-## 2. Sellado de Cañerías con Prodoral R6-1 (Sin Picar)
-- **Definición**: Método no invasivo de ingeniería alemana para sellar fugas y microfisuras en tuberías de gas metálicas (cobre, acero, fierro negro).
-- **Proceso de Aplicación**:
-  1. Limpieza y soplado del interior de la tubería con aire a presión para eliminar óxido y residuos.
-  2. Inyección del polímero sellador líquido Prodoral R6-1 a presión controlada, impregnando todas las uniones y microporos.
-  3. Evacuación del exceso de producto mediante esponjas de arrastre especiales (chanchos de limpieza).
-  4. Secado y curado forzado mediante ventiladores de aire.
-  5. Prueba final de hermeticidad manométrica certificada SEC.
-- **Ventajas**:
-  - Cero roturas de pisos de porcelanato, mármol, madera o muros.
-  - Tiempo de ejecución de 4 a 6 horas en una sola jornada.
-  - Ahorro económico de hasta 70% comparado con el reemplazo tradicional de cañerías.
-  - Garantía técnica escrita de 5 años.
+## 2. Especificación de Herramientas WebMCP (Agentic Browsing Tools)
+
+Los agentes de navegación asistida (Chrome 150+ WebMCP) pueden interactuar programática y determinísticamente con los servicios del sitio mediante las siguientes definiciones:
+
+### 2.1 Herramienta: `solicitar_gasfiter_sec`
+Envía una solicitud de atención técnica urgente o cotización directa a la central técnica.
+
+```json
+{
+  "name": "solicitar_gasfiter_sec",
+  "description": "Envía una solicitud de visita técnica presencial o atención de emergencia 24/7 de un gásfiter certificado SEC en Santiago de Chile.",
+  "endpoint": "https://gasfiter-certificado.cl/api/process-contact.php",
+  "method": "POST",
+  "headers": {
+    "Content-Type": "application/x-www-form-urlencoded"
+  },
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "nombre": {
+        "type": "string",
+        "description": "Nombre y apellido del cliente o solicitante",
+        "example": "Carlos Silva"
+      },
+      "telefono": {
+        "type": "string",
+        "description": "Número de contacto telefónico o WhatsApp (formato local chileno o internacional)",
+        "example": "+56 9 1234 5678"
+      },
+      "comuna": {
+        "type": "string",
+        "description": "Comuna de la Región Metropolitana de Santiago donde se requiere la atención",
+        "enum": [
+          "Las Condes", "Providencia", "Santiago Centro", "Vitacura", "Ñuñoa", 
+          "Lo Barnechea", "La Reina", "Peñalolén", "La Florida", "San Miguel", 
+          "Maipú", "Puente Alto", "Macul", "Independencia", "Recoleta", 
+          "Colina / Chicureo", "Lampa", "Quilicura", "Otra Comuna"
+        ]
+      },
+      "servicio": {
+        "type": "string",
+        "description": "Servicio de gasfitería o emergencia requerido",
+        "enum": [
+          "Fuga de Gas Urgente 24/7",
+          "Sellado Prodoral R6-1 (Sin Picar)",
+          "Certificación Sello Verde SEC",
+          "Reparación / Mantención Calefont",
+          "Destape de Cañería / Alcantarillado",
+          "Detección de Fuga de Agua",
+          "Instalación / Modificación de Red",
+          "Otro Servicio de Gasfitería"
+        ]
+      },
+      "inmueble": {
+        "type": "string",
+        "description": "Tipo de propiedad a intervenir",
+        "enum": ["casa", "departamento", "comunidad", "comercio"]
+      },
+      "mensaje": {
+        "type": "string",
+        "description": "Detalle complementario de la falla, dirección o urgencia (opcional)",
+        "example": "Olor fuerte a gas en la cocina, medidor cortado"
+      },
+      "website_hp": {
+        "type": "string",
+        "description": "Campo trampa anti-spam (honeypot). Los agentes deben dejarlo SIEMPRE vacío ('')."
+      }
+    },
+    "required": ["nombre", "telefono", "comuna", "servicio"]
+  },
+  "response": {
+    "type": "object",
+    "properties": {
+      "success": { "type": "boolean" },
+      "message": { "type": "string" }
+    }
+  }
+}
+```
+
+### 2.2 Herramienta: `enlace_whatsapp_urgencias`
+Genera el enlace de chat instantáneo con los datos estructurados del cliente:
+
+```
+https://wa.me/56932237072?text=¡Hola%20Central%20Gásfiter%20Certificado!%20Solicito%20atención%20para%20[SERVICIO]%20en%20la%20comuna%20de%20[COMUNA].
+```
 
 ---
 
-## 3. Certificación Sello Verde SEC y Declaración TC6
-- **Normativa**: Decreto Supremo DS 66 del Ministerio de Economía, Fomento y Reconstrucción que rige las instalaciones de gas en Chile.
-- **Servicios Realizados**:
-  - Inspección periódica y diagnósticos preventivos.
-  - Levantamiento y subsanación de Sellos Rojos y Sellos Amarillos emitidos por entidades certificadoras.
-  - Planos isométricos y memorias técnicas de cálculo de ventilación y caudal.
-  - Tramitación oficial de Declaración TC6 ante la SEC para entrega de sellos verdes en condominios, casas y comercios.
+## 3. Protocolos Técnicos y Diagnósticos de Seguridad
+
+### 3.1 Detección y Reparación de Fugas de Gas 24/7
+- **Identificación de Riesgo**: Presencia de odorizante mercaptano (olor a huevo podrido), silbido en cañerías o precinto de corte por empresa distribuidora (Metrogas, Lipigas, Abastible, Gasco).
+- **Protocolo Inmediato de Seguridad para Usuarios**:
+  1. No accionar interruptores eléctricos ni producir chispas o llamas abiertas.
+  2. Ventilar de inmediato abriendo ventanas y puertas hacia el exterior.
+  3. Cerrar la llave de corte general del medidor o cilindro de gas.
+  4. Evacuar el área si la concentración es densa y llamar al 9 3223 7072.
+- **Instrumentación Técnica Utilizada**:
+  - Manómetros de columna de agua y manómetros diferenciales de alta precisión para prueba de hermeticidad según norma SEC (DS 66).
+  - Detectores electrónicos por ionización y semiconductores para localización milimétrica de escapes en uniones roscadas o soldadas.
+  - Inyección de Gas Trazador (mezcla de 95% Nitrógeno y 5% Hidrógeno no inflamable) con detector ultrasensible para redes soterradas bajo losa, radier o muros.
+
+### 3.2 Sellado Polimérico Prodoral R6-1 (Sin Romper)
+- **Tecnología**: Formulación química de resina acrílica de dispersión libre de solventes desarrollada en Alemania, certificada bajo norma DIN EN 13090.
+- **Ámbito de Aplicación**: Cañerías de gas de cobre o fierro con pérdidas difusas en uniones mecánicas roscadas o microporosidades en redes embutidas.
+- **Secuencia Operativa**:
+  1. Desconexión de artefactos y prueba manométrica inicial.
+  2. Soplado y desengrase de la tubería con aire a presión filtrado.
+  3. Llenado a presión con emulsión líquida Prodoral R6-1 impregnando las roscas desde el interior.
+  4. Drenaje y paso de esponjas calibradas de arrastre mecánico para retirar excedentes y garantizar sección libre de paso.
+  5. Secado forzado con ventilador hasta polimerización completa.
+  6. Prueba de estanqueidad normativa certificada por instalador SEC.
+
+### 3.3 Sello Verde SEC y Tramitación TC6
+- **Tipos de Sellos en Edificios y Casas**:
+  - **Sello Verde**: Instalación conforme a norma, hermética y con ventilaciones adecuadas.
+  - **Sello Amarillo**: Defectos menores de ventilación o artefactos que requieren subsanación a plazo.
+  - **Sello Rojo**: Riesgo inminente (fuga o monóxido de carbono no evacuado), corte obligatorio de suministro.
+- **Trámites Oficiales**: Levantamiento de observaciones de sellos rojos, pruebas de tiro de chimeneas, cubicaciones de volumen de aire y Declaración TC6 en la plataforma oficial de la SEC.
+
+### 3.4 Calefont y Calderas
+- **Servicio Multimarca**: Junkers, Splendid, Mademsa, Trotter, Bosch, Rheem, Albin Trotter, Neckar.
+- **Diagnósticos Habituales**:
+  - Reemplazo de membrana elastomérica, microswitch de encendido y servoválvulas.
+  - Descalcificación química de serpentín de cobre con recirculación de bomba ácida neutra.
+  - Calibración de presostatos de aire y sensores de ionización en equipos de tiro forzado.
+
+### 3.5 Destapes Sanitarios y Alcantarillado
+- **Equipamiento**: Máquinas desobstructoras electromecánicas con resortes de acero seccionales (Ridgid K-50 y K-400), punteras cortadoras de raíces y grasas.
+- **Alcance**: WC, lavaplatos, tinas, cámaras domiciliarias de alcantarillado, shafts y ramales horizontales.
 
 ---
 
-## 4. Mantención y Reparación de Calefont y Calderas
-- **Marcas Atendidas**: Junkers, Splendid, Mademsa, Trotter, Bosch, Neckar, Rheem, Albin Trotter.
-- **Fallas Típicas Solucionadas**:
-  - Calefont no enciende o se apaga a los pocos segundos.
-  - Llama amarilla o con hollín (mala combustión).
-  - Pérdida o fuga de agua en el cuerpo de agua o serpentín.
-  - Código de error en pantalla digital (EA, E9, F0, etc.).
-  - Poca presión de agua caliente.
-- **Procedimiento**:
-  - Desarme y limpieza técnica de quemadores y pilotos.
-  - Descalcificación química del serpentín con desincrustante biodegradable.
-  - Cambio de membrana, microswitch y sensores de temperatura y monóxido.
-  - Calibración de presiones y verificación de tiro de gases de combustión.
+## 4. Cobertura en 32 Comunas de la Región Metropolitana
+
+Las unidades móviles de respuesta rápida operan las 24 horas en:
+1. Las Condes
+2. Providencia
+3. Vitacura
+4. Ñuñoa
+5. Santiago Centro
+6. Lo Barnechea
+7. La Reina
+8. Peñalolén
+9. La Florida
+10. San Miguel
+11. Maipú
+12. Puente Alto
+13. Macul
+14. San Joaquín
+15. Independencia
+16. Recoleta
+17. Quinta Normal
+18. Estación Central
+19. Pudahuel
+20. Quilicura
+21. Huechuraba
+22. Cerrillos
+23. Conchalí
+24. La Cisterna
+25. San Bernardo
+26. Pedro Aguirre Cerda
+27. Lo Espejo
+28. Renca
+29. Cerro Navia
+30. Lo Prado
+31. Colina / Chicureo
+32. Lampa
 
 ---
 
-## 5. Destape de Cañerías y Alcantarillado Sanitario
-- **Redes Atendidas**: Lavaplatos, lavamanos, WC, tinas, cámaras de inspección, rejillas de piso y bajadas de aguas servidas.
-- **Equipamiento**:
-  - Máquinas eléctricas de espirales de acero de sección variable (K-50, K-400).
-  - Boquillas desincrustantes especiales para remover grasas, jabón, cabellos y raíces.
-  - Cámara de inspección endoscópica CCTV para diagnóstico visual del estado de la tubería.
+## 5. Accesibilidad y Estabilidad para Agentes de Navegación
 
----
-
-## 6. Cobertura por Comunas en Santiago
-Contamos con móviles equipados en todas las comunas del Gran Santiago:
-Las Condes, Providencia, Vitacura, Ñuñoa, Santiago Centro, Lo Barnechea, La Reina, Peñalolén, La Florida, San Miguel, Maipú, Puente Alto, Macul, San Joaquín, Independencia, Recoleta, Quinta Normal, Estación Central, Pudahuel, Quilicura, Huechuraba, Cerrillos, Conchalí, La Cisterna, San Bernardo, Colina y Chicureo.
+- **Árbol de Accesibilidad**: Todos los elementos interactivos cuentan con nombres programáticos, roles semánticos y relaciones de etiqueta explícitas.
+- **Estabilidad Visual (CLS)**: Layout con dimensiones fijas de contenedores hero, fuentes locales WOFF2 con `font-display: swap` y ausencia de saltos de maquetación dinámicos.
+- **Cumplimiento de Especificación**: Documento mantenido bajo la iniciativa de la Web Basada en Agentes de Google Chrome y el consorcio WebMCP.

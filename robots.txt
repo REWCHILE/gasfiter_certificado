@@ -3,4 +3,8 @@ Allow: /
 Disallow: /api/
 Disallow: /data/
 
+# Machine-Readable Context for LLMs & AI Agents (llmstxt.org & WebMCP)
+Allow: /llms.txt
+Allow: /llms-full.txt
+
 Sitemap: https://gasfiter-certificado.cl/sitemap.xml

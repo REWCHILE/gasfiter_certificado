@@ -118,7 +118,7 @@ include_once __DIR__ . '/includes/header.php';
           <p class="hero-card-subtitle">Llegada estimada en 30 a 45 minutos</p>
         </div>
 
-        <form class="ajax-contact-form" method="POST" action="api/contact.php">
+        <form class="ajax-contact-form" method="POST" action="api/process-contact.php" toolname="solicitar_gasfiter_sec" tooldescription="Solicitar atención técnica urgente 24/7 o cotización de gásfiter certificado SEC en Santiago" aria-label="Formulario de Contacto SEC">
           <input type="text" name="website_hp" style="display:none;" tabindex="-1" autocomplete="off">
           <input type="hidden" name="servicio" value="<?php echo htmlspecialchars(strip_tags($route['h1'])); ?>">
 

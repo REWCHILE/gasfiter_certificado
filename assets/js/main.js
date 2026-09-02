@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initFaqAccordion();
     initComunasFilter();
     initLiveSocialToasts();
+    initWebMCP();
   });
 });
 
@@ -281,3 +282,34 @@ function initContactForms() {
     });
   });
 }
+
+/* WebMCP Tool Registration (Agentic Browsing - Chrome 150+) */
+function initWebMCP() {
+  if (typeof navigator !== 'undefined' && navigator.modelContext && typeof navigator.modelContext.registerTool === 'function') {
+    try {
+      navigator.modelContext.registerTool({
+        name: 'solicitar_gasfiter_sec',
+        description: 'Solicita un gásfiter certificado SEC de turno 24/7 en Santiago de Chile',
+        parameters: {
+          type: 'object',
+          properties: {
+            nombre: { type: 'string', description: 'Nombre completo del cliente' },
+            telefono: { type: 'string', description: 'Teléfono o WhatsApp' },
+            comuna: { type: 'string', description: 'Comuna de Santiago donde se requiere el servicio' },
+            servicio: { type: 'string', description: 'Tipo de servicio requerido' }
+          },
+          required: ['nombre', 'telefono', 'comuna', 'servicio']
+        },
+        execute: async (params) => {
+          const fd = new FormData();
+          Object.entries(params).forEach(([k, v]) => fd.append(k, v));
+          const res = await fetch('api/process-contact.php', { method: 'POST', body: fd });
+          return await res.json();
+        }
+      });
+    } catch (e) {
+      // Graceful fallback if WebMCP flags are disabled
+    }
+  }
+}
+
