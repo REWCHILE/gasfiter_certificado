@@ -181,13 +181,6 @@ $page_type = isset($page_type) ? $page_type : "website";
             }
           }
         ]
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "287",
-        "bestRating": "5",
-        "worstRating": "1"
       }
     },
     {
