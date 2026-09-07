@@ -1,6 +1,6 @@
 <?php
 $page_title = "📞 9 3223 7072 | Central Gásfiter Certificado SEC 24 Horas";
-$page_description = "Contáctanos las 24 horas para emergencias de gas, fugas, mantención de calefont o destapes. Teléfono directo: 9 3223 7072. Base central en Santiago de Chile.";
+$page_description = "Contacto 24/7 para emergencias de gasfitería SEC en Santiago. Detección de fugas de gas, calefont y destapes. Llama directo al 9 3223 7072.";
 $page_type = "website";
 $canonical_url = "https://gasfiter-certificado.cl/contacto";
 $og_image = "https://gasfiter-certificado.cl/assets/images/og-share-gasfiter.jpg";

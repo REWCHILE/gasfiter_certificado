@@ -5,6 +5,7 @@
  * Gásfiter Certificado - gasfiter-certificado.cl
  */
 
+require_once __DIR__ . '/includes/canonical-redirect.php';
 require_once __DIR__ . '/data/seo-routes.php';
 
 $raw_slug = isset($_GET['slug']) ? trim($_GET['slug'], '/') : '';

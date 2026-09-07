@@ -1,6 +1,6 @@
 <?php
 $page_title = "📞 9 3223 7072 | Cotizador Online de Gasfitería SEC Santiago";
-$page_description = "Calcula el costo estimado de tu servicio de gasfitería, detección de fugas de gas, sellado con Prodoral R6-1 o mantención de calefont en segundos. Llama al 9 3223 7072.";
+$page_description = "Cotiza tu servicio de gasfitería SEC en Santiago: detección de fugas de gas, sellado Prodoral R6-1 y reparación de calefont. Llama al 9 3223 7072.";
 $page_type = "website";
 $canonical_url = "https://gasfiter-certificado.cl/cotizar";
 $og_image = "https://gasfiter-certificado.cl/assets/images/og-share-gasfiter.jpg";

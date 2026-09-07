@@ -1,6 +1,6 @@
 <?php
 $page_title = "📞 9 3223 7072 | Gásfiter Certificado SEC en Santiago 24/7";
-$page_description = "Más de 40 años prestando servicios de gasfitería SEC en Santiago. Detección electrónica de fugas de gas, prueba de hermeticidad, detección de fugas de agua, sellado Prodoral R6-1 y calefont. Llama 24/7 al 9 3223 7072.";
+$page_description = "Gásfiter certificado SEC en Santiago 24/7. Detección de fugas de gas, sellado Prodoral R6-1 sin picar y reparación de calefont. Llama al 9 3223 7072.";
 $page_type = "website";
 $canonical_url = "https://gasfiter-certificado.cl/";
 $og_image = "https://gasfiter-certificado.cl/assets/images/og-share-gasfiter.jpg";
@@ -24,7 +24,7 @@ include_once __DIR__ . '/includes/header.php';
         </h1>
 
         <p class="hero-lead">
-          <strong>Más de 40 años prestando servicios en distintas especialidades de la gasfitería</strong>. Detección electrónica de fugas de gas, pruebas de hermeticidad, certificación Sello Verde, sellado <strong>Prodoral R6-1 (sin picar)</strong> y reparación de calefont.
+          <strong>Más de 40 años de experiencia</strong> prestando servicios profesionales de gasfitería SEC en Santiago. Detección electrónica de fugas de gas, pruebas de hermeticidad, certificación Sello Verde, sellado <strong>Prodoral R6-1 (sin picar)</strong> y reparación de calefont.
         </p>
 
         <div class="hero-trust-bullets">
@@ -457,9 +457,9 @@ include_once __DIR__ . '/includes/header.php';
         <div class="calculator-body">
           <!-- Step 1: Select Service -->
           <div class="calc-step active" data-step="1">
-            <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; color: var(--primary-navy); margin-bottom: 1.25rem;">
+            <div class="calc-step-title" role="heading" aria-level="3" style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; color: var(--primary-navy); margin-bottom: 1.25rem;">
               Paso 1: ¿Qué problema o servicio necesitas resolver?
-            </h3>
+            </div>
             <div class="calc-options-grid">
               <div class="calc-option-card selected" data-service="fuga-gas">
                 <div class="calc-option-icon">🔥</div>
@@ -507,9 +507,9 @@ include_once __DIR__ . '/includes/header.php';
 
           <!-- Step 2: Property & Comuna -->
           <div class="calc-step" data-step="2">
-            <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; color: var(--primary-navy); margin-bottom: 1.25rem;">
+            <div class="calc-step-title" role="heading" aria-level="3" style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; color: var(--primary-navy); margin-bottom: 1.25rem;">
               Paso 2: Detalles de tu propiedad y ubicación
-            </h3>
+            </div>
 
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem;">
               <fieldset class="form-group" style="border: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.75rem 1rem; align-items: center;">
@@ -557,15 +557,15 @@ include_once __DIR__ . '/includes/header.php';
 
           <!-- Step 3: Estimated Summary -->
           <div class="calc-step" data-step="3">
-            <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; color: var(--primary-navy); margin-bottom: 1.25rem;">
+            <div class="calc-step-title" role="heading" aria-level="3" style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; color: var(--primary-navy); margin-bottom: 1.25rem;">
               Paso 3: Evaluación y Diagnóstico Técnico
-            </h3>
+            </div>
 
             <div class="calc-summary-box">
               <div style="font-size: 0.85rem; text-transform: uppercase; font-weight: 800; color: var(--primary-blue-light); letter-spacing: 0.5px; margin-bottom: 0.35rem;">
                 Resumen de tu Solicitud
               </div>
-              <h4 class="calc-summary-title" id="summary-service">Detección y Reparación Fuga de Gas</h4>
+              <div class="calc-summary-title" role="heading" aria-level="4" id="summary-service">Detección y Reparación Fuga de Gas</div>
               <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem;">
                 <strong>Ubicación:</strong> <span id="summary-comuna">Santiago Centro (CASA)</span>
               </p>

@@ -14,7 +14,7 @@ $site_domain = "https://gasfiter-certificado.cl";
 
 // Default page variables
 $page_title = isset($page_title) ? $page_title : "📞 9 3223 7072 | Gásfiter Certificado SEC en Santiago 24/7";
-$page_description = isset($page_description) ? $page_description : "Central Gásfiter Certificado SEC en Santiago. Detección y reparación de fugas de gas, sellado con Prodoral R6-1 sin picar, mantención de calefont y destapes. Tiempo de respuesta: 30 a 45 min. Llama al 9 3223 7072.";
+$page_description = isset($page_description) ? $page_description : "Gásfiter certificado SEC en Santiago 24/7. Detección de fugas de gas, sellado Prodoral R6-1 sin picar y reparación de calefont. Llama al 9 3223 7072.";
 
 // Compute clean canonical URL without .php
 if (!isset($canonical_url)) {
@@ -41,9 +41,12 @@ $page_type = isset($page_type) ? $page_type : "website";
 <meta name="description" content="<?php echo htmlspecialchars($page_description); ?>">
 <meta name="keywords" content="gasfiter, gasfiter certificado, gasfiter sec, central gasfiter, casa del gasfiter, fuga de gas, fuga gas, prodoral, sellado prodoral r6-1, prodoral r6, instalacion de calefont, reparacion calefont, plomeria, fontanero, sello verde sec, gas natural, gas licuado, santiago chile">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-<meta name="language" content="Spanish">
+<meta name="language" content="es-CL">
+<meta http-equiv="content-language" content="es-CL">
 <meta name="author" content="Central Gásfiter Certificado SEC Chile">
 <link rel="canonical" href="<?php echo htmlspecialchars($canonical_url); ?>">
+<link rel="alternate" hreflang="es-CL" href="<?php echo htmlspecialchars($canonical_url); ?>">
+<link rel="alternate" hreflang="x-default" href="<?php echo htmlspecialchars($canonical_url); ?>">
 <link rel="alternate" type="text/plain" href="/llms.txt" title="Contexto para Modelos de Lenguaje / IA">
 <link rel="alternate" type="text/plain" href="/llms-full.txt" title="Documentación Completa para IA">
 

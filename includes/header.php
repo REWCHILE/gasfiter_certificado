@@ -1,4 +1,6 @@
 <?php
+require_once __DIR__ . '/canonical-redirect.php';
+
 // Compute hero image preload for LCP optimization
 $current_script = basename($_SERVER['PHP_SELF']);
 if (!isset($hero_preload_image)) {
@@ -40,6 +42,7 @@ if (!isset($hero_preload_image)) {
   <!-- Inlined Minified Stylesheet (0ms Render Blocking) -->
   <style><?php include __DIR__ . '/../assets/css/main.min.css'; ?></style>
   <link rel="icon" type="image/webp" href="assets/images/logo.webp">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/logo.jpg">
 </head>
 <body>
 

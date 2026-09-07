@@ -1,6 +1,6 @@
 <?php
 $page_title = "📞 9 3223 7072 | Gásfiter Certificado SEC & Sello Verde Santiago";
-$page_description = "Instaladores autorizados SEC en Santiago. Tramitación de Sello Verde, levantamiento de sellos rojos y amarillos, declaraciones TC6 y proyectos de gas. Llama al 9 3223 7072.";
+$page_description = "Gásfiter e instaladores autorizados SEC en Santiago. Tramitación Sello Verde, levantamiento de sellos rojos y declaración TC6. Llama al 9 3223 7072.";
 $page_type = "website";
 $canonical_url = "https://gasfiter-certificado.cl/gasfiter-sec";
 $og_image = "https://gasfiter-certificado.cl/assets/images/og-share-sec.jpg";

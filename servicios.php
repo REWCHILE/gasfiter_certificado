@@ -1,6 +1,6 @@
 <?php
 $page_title = "📞 9 3223 7072 | Servicios de Gasfitería Certificada SEC Santiago";
-$page_description = "Catálogo completo de servicios de gasfitería, detección de fugas de gas, sellado con Prodoral R6-1 sin picar, Sello Verde SEC, reparación de calefont y destapes. Llama al 9 3223 7072.";
+$page_description = "Servicios de gasfitería SEC en Santiago: detección de fugas de gas, sellado Prodoral R6-1 sin picar, Sello Verde y calefont 24/7. Llama al 9 3223 7072.";
 $page_type = "website";
 $canonical_url = "https://gasfiter-certificado.cl/servicios";
 $og_image = "https://gasfiter-certificado.cl/assets/images/og-share-gasfiter.jpg";

@@ -1,6 +1,6 @@
 <?php
 $page_title = "📞 9 3223 7072 | Gásfiter a Domicilio en Santiago y Comunas RM";
-$page_description = "Cobertura total de gásfiter certificado SEC en Santiago: Las Condes, Providencia, Vitacura, Ñuñoa, Santiago Centro, Lo Barnechea, Maipú, La Florida y toda la RM. Llama al 9 3223 7072.";
+$page_description = "Gásfiter certificado SEC en todas las comunas de Santiago. Llegada en 30 a 45 min a Las Condes, Providencia, Ñuñoa y toda la RM. Llama al 9 3223 7072.";
 $page_type = "website";
 $canonical_url = "https://gasfiter-certificado.cl/cobertura";
 $og_image = "https://gasfiter-certificado.cl/assets/images/og-share-gasfiter.jpg";
