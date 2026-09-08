@@ -41,6 +41,7 @@ $page_type = isset($page_type) ? $page_type : "website";
 <meta name="description" content="<?php echo htmlspecialchars($page_description); ?>">
 <meta name="keywords" content="gasfiter, gasfiter certificado, gasfiter sec, central gasfiter, casa del gasfiter, fuga de gas, fuga gas, prodoral, sellado prodoral r6-1, prodoral r6, instalacion de calefont, reparacion calefont, plomeria, fontanero, sello verde sec, gas natural, gas licuado, santiago chile">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="google-site-verification" content="nPOvPDvvR0X7LcySkexkNNlL5NGZBt8p4fbE8V3IE6w">
 <meta name="language" content="es-CL">
 <meta http-equiv="content-language" content="es-CL">
 <meta name="author" content="Central Gásfiter Certificado SEC Chile">
